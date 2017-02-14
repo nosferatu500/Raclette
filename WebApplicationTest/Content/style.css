@@ -36,7 +36,7 @@ body a:focus {
     outline: none;
 }
 .banner {
-    background: url(../images/1.jpg) no-repeat center;
+    background: url(../../Content/images/1.jpg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -318,14 +318,14 @@ option {
 	background: linear-gradient(to bottom, #f1efef 51%,#00BCD4 125%);
 }
 .w3ls-add-grids {
-    background: url(../images/img1.jpg)no-repeat 0px 0px;
+    background: url(../../Content/images/img1.jpg)no-repeat 0px 0px;
     background-size: cover;
     width: 45%; 
     float: left;
     margin: 0 0 0 2.5em;
 }
 .w3ls-add-grids.w3ls-add-grids-right{
-    background: url(../images/img2.jpg)no-repeat 0px 0px; 
+    background: url(../../Content/images/img2.jpg)no-repeat 0px 0px; 
 	background-size: cover;
 	text-align: right;
 } 
@@ -458,7 +458,7 @@ img.w3order-img {
 /*-- //order --*/
 /*-- deals --*/  
 .w3agile-deals { 
-    background:url(../images/1.jpg)no-repeat center 0px fixed;
+    background:url(../../Content/images/1.jpg)no-repeat center 0px fixed;
 	background-size: cover; 
 }
 .w3agile-deals h3.w3ls-title {
@@ -813,7 +813,7 @@ img.w3order-img {
 	height: 32px;
 	border: none;
 	text-indent: 100%;
-	background: url("../images/move-up.png") no-repeat 0px 0px;
+	background: url("../../Content/images/move-up.png") no-repeat 0px 0px;
 	z-index:999;
 }
 #toTopHover {
@@ -1239,7 +1239,7 @@ input.item_quantity:hover{
 }
 .checkbox input + i:after {
     content: '';
-    background: url("../images/tick.png") no-repeat 4px 3px;
+    background: url("../../Content/images/tick.png") no-repeat 4px 3px;
     top: -1px;
     left: -1px;
     width: 17px;
@@ -2049,7 +2049,7 @@ p.single-price-text {
 /*-- //login --*/
 /*-- offers --*/
 .offers-wthreerow {
-    background: url(../images/g6.jpg)no-repeat 0px;
+    background: url(../../Content/images/g6.jpg)no-repeat 0px;
     min-height: 350px;
     background-size: 100%;
 }
