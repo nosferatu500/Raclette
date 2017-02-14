@@ -12,6 +12,27 @@ namespace WebApplicationTest
         // For more information on Bundling, visit https://go.microsoft.com/fwlink/?LinkID=303951
         public static void RegisterBundles(BundleCollection bundles)
         {
+            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
+            "~/Scripts/jquery-2.2.3.min.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/jscrollpane").Include(
+        "~/Scripts/jquery.jscrollpane.min.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/mousewheel").Include(
+        "~/Scripts/jquery.mousewheel.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/minicart").Include(
+        "~/Scripts/minicart.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/move-top").Include(
+        "~/Scripts/move-top.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/owl").Include(
+        "~/Scripts/owl.carousel.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/SmoothScroll").Include(
+        "~/Scripts/SmoothScroll.min.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/WebFormsJs").Include(
                             "~/Scripts/WebForms/WebForms.js",
                             "~/Scripts/WebForms/WebUIValidation.js",
@@ -41,6 +62,13 @@ namespace WebApplicationTest
                     Path = "~/Scripts/respond.min.js",
                     DebugPath = "~/Scripts/respond.js",
                 });
+
+            bundles.Add(new StyleBundle("~/Content/css").Include(
+                "~/Content/bootstrap.min.css",
+                "~/Content/style.css",
+                "~/Content/font-awesome.css",
+                "~/Content/owl.carousel.css", 
+                "~/Content/site.css"));
         }
     }
 }

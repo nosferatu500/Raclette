@@ -6,13 +6,29 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title><%: Page.Title %> - Wingtip Toys</title>
+
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
+        <%: Scripts.Render("~/bundles/jquery") %>
+        <%: Scripts.Render("~/bundles/jscrollpane") %>
+        <%: Scripts.Render("~/bundles/mousewheel") %>
+        <%: Scripts.Render("~/bundles/minicart") %>
+        <%: Scripts.Render("~/bundles/move-top") %>
+        <%: Scripts.Render("~/bundles/owl") %>
+        <%: Scripts.Render("~/bundles/SmoothScroll") %>
+        
+        <%: Styles.Render("~/Content/css") %>
     </asp:PlaceHolder>
-    <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    
+    <link href="//fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Yantramanav:100,300,400,500,700,900" rel="stylesheet">
 
 </head>
 <body>
@@ -22,8 +38,8 @@
                 <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
                 <%--Framework Scripts--%>
                 <asp:ScriptReference Name="MsAjaxBundle" />
-                <asp:ScriptReference Name="jquery" />
-                <asp:ScriptReference Name="bootstrap" />
+                <%--<asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />--%>
                 <asp:ScriptReference Name="respond" />
                 <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
                 <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
@@ -77,6 +93,12 @@
                 </div>
             </div>
         </div>
+        
+        
+        
+        
+        
+
         <div id="TitleContent" style="text-align: center">
             <a runat="server" href="~/">
                 <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/logo.jpg" BorderStyle="None" />
