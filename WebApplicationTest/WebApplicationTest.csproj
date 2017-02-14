@@ -256,7 +256,6 @@
     <Content Include="Content\images\si2.jpg" />
     <Content Include="Content\jquery-ui.css" />
     <Content Include="Content\jquery.countdown.css" />
-    <Content Include="Content\Site.css" />
     <Content Include="Content\style.css" />
     <Content Include="Default.aspx" />
     <Content Include="ErrorPage.aspx" />
