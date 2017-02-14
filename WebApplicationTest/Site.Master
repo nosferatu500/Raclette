@@ -17,19 +17,19 @@
         <%: Scripts.Render("~/bundles/modernizr") %>
         <%: Scripts.Render("~/bundles/jquery") %>
         <%: Scripts.Render("~/bundles/jscrollpane") %>
+        <%: Scripts.Render("~/bundles/bootstrap") %>
         <%: Scripts.Render("~/bundles/mousewheel") %>
         <%: Scripts.Render("~/bundles/minicart") %>
         <%: Scripts.Render("~/bundles/move-top") %>
         <%: Scripts.Render("~/bundles/owl") %>
         <%: Scripts.Render("~/bundles/SmoothScroll") %>
-        
+
         <%: Styles.Render("~/Content/css") %>
     </asp:PlaceHolder>
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    
+
     <link href="//fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Yantramanav:100,300,400,500,700,900" rel="stylesheet">
-
 </head>
 <body>
     <form runat="server">
@@ -93,8 +93,103 @@
                 </div>
             </div>
         </div>
-        
-        
+
+        <div class="banner">
+            <div class="header">
+                <div class="w3ls-header">
+                    <!-- header-one -->
+                    <div class="container">
+                        <div class="w3ls-header-left">
+                            <p>Free home delivery at your doorstep For Above $30</p>
+                        </div>
+                        <div class="w3ls-header-right">
+                            <ul>
+                                <li class="head-dpdn">
+                                    <i class="fa fa-phone" aria-hidden="true"></i>Call us: +01 222 33345 
+                                </li>
+                                <li class="head-dpdn">
+                                    <a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Login</a>
+                                </li>
+                                <li class="head-dpdn">
+                                    <a href="signup.html"><i class="fa fa-user-plus" aria-hidden="true"></i>Signup</a>
+                                </li>
+                                <li class="head-dpdn">
+                                    <a href="offers.html"><i class="fa fa-gift" aria-hidden="true"></i>Offers</a>
+                                </li>
+                                <li class="head-dpdn">
+                                    <a href="help.html"><i class="fa fa-question-circle" aria-hidden="true"></i>Help</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="navigation agiletop-nav">
+                    <div class="container">
+                        <nav class="navbar navbar-default">
+                            <div class="navbar-header w3l_logo">
+                                <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <h1><a href="index.html">Staple<span>Best Food Collection</span></a></h1>
+                            </div>
+                            <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="index.html" class="active">Home</a></li>	
+								<!-- Mega Menu -->
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
+									<ul class="dropdown-menu multi-column columns-3">
+										<div class="row">
+											<div class="col-sm-4">
+												<ul class="multi-column-dropdown">
+													<h6>Food type</h6>  
+													<li><a href="menu.html">Breakfast</a></li> 
+													<li><a href="menu.html">Lunch</a></li> 
+													<li><a href="menu.html">Dinner</a></li> 
+												</ul>
+											</div>
+											<div class="col-sm-4">
+												<ul class="multi-column-dropdown">
+													<h6>Cuisine</h6> 
+													<li><a href="menu.html">Indian Recipes</a></li> 
+													<li><a href="menu.html">American Recipes</a></li> 
+													<li><a href="menu.html">French Recipes</a></li> 
+													<li><a href="menu.html">Italian Recipes</a></li> 
+												</ul>
+											</div>
+											<div class="col-sm-4">
+												<ul class="multi-column-dropdown">
+													<h6>Box type</h6> 
+													<li><a href="menu.html">Diet</a></li> 
+													<li><a href="menu.html">Mini</a></li> 
+													<li><a href="menu.html">Regular</a></li> 
+													<li><a href="menu.html">Special</a></li> 
+												</ul>
+											</div> 
+											<div class="clearfix"></div>
+										</div>
+									</ul>
+								</li>
+								<li><a href="about.html">About</a></li> 
+								<li class="w3pages"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="icons.html">Web Icons</a></li>
+										<li><a href="codes.html">Short Codes</a></li>     
+									</ul>
+								</li>  
+								<li><a href="contact.html">Contact Us</a></li>
+							</ul>
+						</div>
+
+                        </nav>
+                    </div>
+                </div>
+        </div>
+        </div>
         
         
         

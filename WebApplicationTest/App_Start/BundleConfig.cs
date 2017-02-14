@@ -13,13 +13,16 @@ namespace WebApplicationTest
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-            "~/Scripts/jquery-2.2.3.min.js"));
+            "~/Scripts/jquery-3.1.1.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jscrollpane").Include(
         "~/Scripts/jquery.jscrollpane.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/mousewheel").Include(
         "~/Scripts/jquery.mousewheel.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
+        "~/Scripts/bootstrap.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/minicart").Include(
         "~/Scripts/minicart.js"));
@@ -67,8 +70,7 @@ namespace WebApplicationTest
                 "~/Content/bootstrap.min.css",
                 "~/Content/style.css",
                 "~/Content/font-awesome.css",
-                "~/Content/owl.carousel.css", 
-                "~/Content/site.css"));
+                "~/Content/owl.carousel.css"));
         }
     }
 }
