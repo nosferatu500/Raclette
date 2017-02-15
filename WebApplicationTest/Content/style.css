@@ -4,6 +4,11 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+.autoResizeImage {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
 body{
 	margin:0; 
 	font-family: 'Yantramanav', sans-serif;
@@ -1029,7 +1034,7 @@ h3.w3ls-title.w3ls-title1 {
 }
 
 .flip-container, .back {
-    width: 100%;
+    width: auto;
     height: 235px;
 }
 .flip-container.flip-container1, .flip-container1 .back {
