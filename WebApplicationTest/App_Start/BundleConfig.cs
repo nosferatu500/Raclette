@@ -36,6 +36,9 @@ namespace WebApplicationTest
             bundles.Add(new ScriptBundle("~/bundles/SmoothScroll").Include(
         "~/Scripts/SmoothScroll.min.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/easing").Include(
+         "~/Scripts/easing.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/WebFormsJs").Include(
                             "~/Scripts/WebForms/WebForms.js",
                             "~/Scripts/WebForms/WebUIValidation.js",

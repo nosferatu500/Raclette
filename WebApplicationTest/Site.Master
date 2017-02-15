@@ -23,6 +23,7 @@
         <%: Scripts.Render("~/bundles/move-top") %>
         <%: Scripts.Render("~/bundles/owl") %>
         <%: Scripts.Render("~/bundles/SmoothScroll") %>
+        <%: Scripts.Render("~/bundles/easing") %>
 
         <%: Styles.Render("~/Content/css") %>
     </asp:PlaceHolder>
@@ -54,26 +55,9 @@
             </Scripts>
         </asp:ScriptManager>
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar navbar-inverse">
             <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" runat="server" href="~/">Wingtip Toys</a>
-                </div>
                 <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" id="adminLink" visible="false"
-                            href="~/Admin/AdminPage">Admin</a></li>
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
-                        <li><a runat="server" href="~/ProductList">Products</a></li>
-                        <li><a runat="server" href="~/ShoppingCart" id="cartCount">&nbsp;</a></li>
-                    </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
@@ -134,11 +118,13 @@
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
-                                <h1><a href="index.html">Staple<span>Best Food Collection</span></a></h1>
+                                <h1><a runat="server" href="~/">Raclette<span>Best Food Collection</span></a></h1>
                             </div>
                             <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li><a href="index.html" class="active">Home</a></li>
+                                    <li><a runat="server" id="adminLink" visible="false"
+                                        href="~/Admin/AdminPage">Admin</a></li>
+                                    <li><a runat="server" href="~/" class="active">Home</a></li>
                                     <!-- Mega Menu -->
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
@@ -174,14 +160,14 @@
                                             </div>
                                         </ul>
                                     </li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li class="w3pages"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
+                                    <li><a runat="server" href="~/About">About</a></li>
+                                    <li class="w3pages"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Test menu <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="icons.html">Web Icons</a></li>
-                                            <li><a href="codes.html">Short Codes</a></li>
+                                            <li><a runat="server" href="~/ProductList">Show all (Test)</a></li>
+                                            <li><a runat="server" href="~/ShoppingCart" id="cartCount">Cart</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="contact.html">Contact Us</a></li>
+                                    <li><a runat="server" href="~/Contact">Contact Us</a></li>
                                 </ul>
                             </div>
                             <div class="cart cart box_1">
@@ -197,7 +183,7 @@
                 </div>
             </div>
         </div>
-            
+
 
 
 
@@ -225,11 +211,112 @@
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
+
+            <div class="footer agileits-w3layouts">
+                <div class="container">
+                    <div class="w3_footer_grids">
+                        <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
+                            <h3>company</h3>
+                            <ul>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="careers.html">Careers</a></li>
+                                <li><a href="help.html">Partner With Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
+                            <h3>help</h3>
+                            <ul>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="login.html">Returns</a></li>
+                                <li><a href="login.html">Order Status</a></li>
+                                <li><a href="offers.html">Offers</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
+                            <h3>policy info</h3>
+                            <ul>
+                                <li><a href="terms.html">Terms & Conditions</a></li>
+                                <li><a href="privacy.html">Privacy Policy</a></li>
+                                <li><a href="login.html">Return Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
+                            <h3>Menu</h3>
+                            <ul>
+                                <li><a href="menu.html">All Day Menu</a></li>
+                                <li><a href="menu.html">Lunch</a></li>
+                                <li><a href="menu.html">Dinner</a></li>
+                                <li><a href="menu.html">Flavours</a></li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyw3-agile">
+                <div class="container">
+                    <p>&copy; 2017 Staple Food. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+                </div>
+            </div>
+
             <hr />
             <footer>
                 <p>&copy; <%: DateTime.Now.Year %> - Wingtip Toys</p>
             </footer>
         </div>
     </form>
+    <script>
+        w3ls.render();
+
+        w3ls.cart.on('w3sb_checkout', function (evt) {
+            var items, len, i;
+
+            if (this.subtotal() > 0) {
+                items = this.items();
+
+                for (i = 0, len = items.length; i < len; i++) {
+                }
+            }
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#owl-demo").owlCarousel({
+                items: 3,
+                lazyLoad: true,
+                autoPlay: true,
+                pagination: true,
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+        });
+    </script>
+
 </body>
 </html>

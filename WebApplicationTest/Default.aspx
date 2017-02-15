@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WebApplicationTest._Default" %>
+﻿<%@ Page EnableEventValidation="false"  Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WebApplicationTest._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="banner-text">
@@ -145,56 +145,56 @@
 					<!-- Owl-Carousel -->
 					<div id="owl-demo" class="owl-carousel text-center agileinfo-gallery-row">
 						<a href="products.html" class="item g1">
-							<img class="lazyOwl" src="images/g1.jpg" title="Our latest gallery" alt=""/>
+							<img class="lazyOwl" src="../../Content/images/g1.jpg" title="Our latest gallery" alt=""/>
 							<div class="agile-dish-caption">
 								<h4>Duis congue</h4>
 								<span>Neque porro quisquam est qui dolorem </span>
 							</div>
 						</a>
 						<a href="products.html" class="item g1">
-							<img class="lazyOwl" src="images/g2.jpg" title="Our latest gallery" alt=""/>
+							<img class="lazyOwl" src="../../Content/images/g2.jpg" title="Our latest gallery" alt=""/>
 							<div class="agile-dish-caption">
 								<h4>Duis congue</h4>
 								<span>Neque porro quisquam est qui dolorem </span>
 							</div>
 						</a>
 						<a href="products.html" class="item g1">
-							<img class="lazyOwl" src="images/g3.jpg" title="Our latest gallery" alt=""/>
+							<img class="lazyOwl" src="../../Content/images/g3.jpg" title="Our latest gallery" alt=""/>
 							<div class="agile-dish-caption">
 								<h4>Duis congue</h4>
 								<span>Neque porro quisquam est qui dolorem </span>
 							</div>
 						</a>
 						<a href="products.html" class="item g1">
-							<img class="lazyOwl" src="images/g4.jpg" title="Our latest gallery" alt=""/>
+							<img class="lazyOwl" src="../../Content/images/g4.jpg" title="Our latest gallery" alt=""/>
 							<div class="agile-dish-caption">
 								<h4>Duis congue</h4>
 								<span>Neque porro quisquam est qui dolorem </span>
 							</div>
 						</a>
 						<a href="products.html" class="item g1">
-							<img class="lazyOwl" src="images/g5.jpg" alt=""/>
+							<img class="lazyOwl" src="../../Content/images/g5.jpg" alt=""/>
 							<div class="agile-dish-caption">
 								<h4>Duis congue</h4>
 								<span>Neque porro quisquam est qui dolorem </span>
 							</div>
 						</a> 
 						<a href="products.html" class="item g1">
-							<img class="lazyOwl" src="images/g1.jpg" title="Our latest gallery" alt=""/>
+							<img class="lazyOwl" src="../../Content/images/g1.jpg" title="Our latest gallery" alt=""/>
 							<div class="agile-dish-caption">
 								<h4>Duis congue</h4>
 								<span>Neque porro quisquam est qui dolorem </span>
 							</div>
 						</a>
 						<a href="products.html" class="item g1">
-							<img class="lazyOwl" src="images/g2.jpg" title="Our latest gallery" alt=""/>
+							<img class="lazyOwl" src="../../Content/images/g2.jpg" title="Our latest gallery" alt=""/>
 							<div class="agile-dish-caption">
 								<h4>Duis congue</h4>
 								<span>Neque porro quisquam est qui dolorem </span>
 							</div>
 						</a>
 						<a href="products.html" class="item g1">
-							<img class="lazyOwl" src="images/g3.jpg" title="Our latest gallery" alt=""/>
+							<img class="lazyOwl" src="../../Content/images/g3.jpg" title="Our latest gallery" alt=""/>
 							<div class="agile-dish-caption">
 								<h4>Duis congue</h4>
 								<span>Neque porro quisquam est qui dolorem </span>
@@ -231,7 +231,7 @@
 					<input type="submit" value="Subscribe">
 					<div class="clearfix"> </div> 
 				</form>  
-				<img src="images/i1.png" class="sub-w3lsimg" alt=""/>
+				<img src="../../Content/images/i1.png" class="sub-w3lsimg" alt=""/>
 			</div>
 			<div class="clearfix"> </div> 
 		</div>
