@@ -1,7 +1,17 @@
 ﻿<%@ Page Title="Register" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="WebApplicationTest.Account.Register" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-    <h2><%: Title %>.</h2>
+    
+    <div class="banner">
+        <div class="banner-text">
+            <div class="container">
+                <h2>Delicious food from the
+                    <br>
+                    <span>Best Chefs For you.</span></h2>
+            </div>
+        </div>
+    </div>
+    
     <p class="text-danger">
         <asp:Literal runat="server" ID="ErrorMessage" />
     </p>
