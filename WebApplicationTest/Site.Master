@@ -192,7 +192,7 @@
                     <br>
                         <span>Newsletter</span></h3>
                     <form action="#" method="post">
-                        <input type="email" name="email" placeholder="Enter your Email..." required="">
+                        <input type="email" name="email" placeholder="Enter your Email...">
                         <input type="submit" value="Subscribe">
                         <div class="clearfix"></div>
                     </form>
