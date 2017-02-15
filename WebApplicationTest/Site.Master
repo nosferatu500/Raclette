@@ -55,29 +55,6 @@
             </Scripts>
         </asp:ScriptManager>
 
-        <div class="navbar navbar-inverse">
-            <div class="container">
-                <div class="navbar-collapse collapse">
-                    <asp:LoginView runat="server" ViewStateMode="Disabled">
-                        <AnonymousTemplate>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Register">Register</a></li>
-                                <li><a runat="server" href="~/Account/Login">Log in</a></li>
-                            </ul>
-                        </AnonymousTemplate>
-                        <LoggedInTemplate>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
-                                <li>
-                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
-                                </li>
-                            </ul>
-                        </LoggedInTemplate>
-                    </asp:LoginView>
-                </div>
-            </div>
-        </div>
-
         <div class="banner">
             <div class="header">
                 <div class="w3ls-header">
@@ -91,12 +68,18 @@
                                 <li class="head-dpdn">
                                     <i class="fa fa-phone" aria-hidden="true"></i>Call us: +01 222 33345 
                                 </li>
-                                <li class="head-dpdn">
-                                    <a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Login</a>
-                                </li>
-                                <li class="head-dpdn">
-                                    <a href="signup.html"><i class="fa fa-user-plus" aria-hidden="true"></i>Signup</a>
-                                </li>
+                                <asp:LoginView runat="server" ViewStateMode="Disabled">
+                                    <AnonymousTemplate>
+                                        <li class="head-dpdn"><a runat="server" href="~/Account/Register"><i class="fa fa-user-plus" aria-hidden="true"></i>Signup</a></li>
+                                        <li class="head-dpdn"><a runat="server" href="~/Account/Login"><i class="fa fa-sign-in" aria-hidden="true"></i>Login</a></li>
+                                    </AnonymousTemplate>
+                                    <LoggedInTemplate>
+                                        <li class="head-dpdn"><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
+                                        <li class="head-dpdn">
+                                            <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
+                                        </li>
+                                    </LoggedInTemplate>
+                                </asp:LoginView>
                                 <li class="head-dpdn">
                                     <a href="offers.html"><i class="fa fa-gift" aria-hidden="true"></i>Offers</a>
                                 </li>
@@ -136,6 +119,22 @@
                                                         <li><a href="menu.html">Breakfast</a></li>
                                                         <li><a href="menu.html">Lunch</a></li>
                                                         <li><a href="menu.html">Dinner</a></li>
+                                                        <asp:ListView ID="ListView1"
+                                                            ItemType="WebApplicationTest.Models.Category"
+                                                            runat="server"
+                                                            SelectMethod="GetCategories">
+                                                            <ItemTemplate>
+                                                                <span>
+                                                                    <li>
+                                                                        <a href="<%#: GetRouteUrl("ProductsByCategoryRoute", new {categoryName = Item.CategoryName}) %>">
+                                                                            <%#: Item.CategoryName %>
+                                                                        </a>
+                                                                    </li>
+                                                                </span>
+                                                            </ItemTemplate>
+                                                            <ItemSeparatorTemplate>
+                                                            </ItemSeparatorTemplate>
+                                                        </asp:ListView>
                                                     </ul>
                                                 </div>
                                                 <div class="col-sm-4">
@@ -154,6 +153,7 @@
                                                         <li><a href="menu.html">Mini</a></li>
                                                         <li><a href="menu.html">Regular</a></li>
                                                         <li><a href="menu.html">Special</a></li>
+
                                                     </ul>
                                                 </div>
                                                 <div class="clearfix"></div>
@@ -184,35 +184,11 @@
             </div>
         </div>
 
-
-
-
-        <div id="TitleContent" style="text-align: center">
-            <a runat="server" href="~/">
-                <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/logo.jpg" BorderStyle="None" />
-            </a>
-            <br />
-        </div>
-        <div id="CategoryMenu" style="text-align: center">
-            <asp:ListView ID="categoryList"
-                ItemType="WebApplicationTest.Models.Category"
-                runat="server"
-                SelectMethod="GetCategories">
-                <ItemTemplate>
-                    <b style="font-size: large; font-style: normal">
-                        <a href="<%#: GetRouteUrl("ProductsByCategoryRoute", new {categoryName = Item.CategoryName}) %>">
-                            <%#: Item.CategoryName %>
-                        </a>
-                    </b>
-                </ItemTemplate>
-                <ItemSeparatorTemplate>|  </ItemSeparatorTemplate>
-            </asp:ListView>
-        </div>
-        <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
 
-            <div class="footer agileits-w3layouts">
+            
+        <div class="footer agileits-w3layouts">
                 <div class="container">
                     <div class="w3_footer_grids">
                         <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
@@ -256,15 +232,14 @@
             </div>
             <div class="copyw3-agile">
                 <div class="container">
-                    <p>&copy; 2017 Staple Food. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+                    <p>&copy; 2017 Raclette. All rights reserved | Design by <a href="https://vk.com/nosferatu500">Me</a></p>
                 </div>
             </div>
 
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Wingtip Toys</p>
+                <p>&copy; <%: DateTime.Now.Year %> - Raclette</p>
             </footer>
-        </div>
     </form>
     <script>
         w3ls.render();
