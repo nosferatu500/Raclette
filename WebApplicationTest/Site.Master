@@ -113,70 +113,28 @@
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
                                         <ul class="dropdown-menu multi-column columns-3">
                                             <div class="row">
-                                                <div class="col-sm-4">
-                                                    <ul class="multi-column-dropdown">
-                                                        <h6>Food type</h6>
-                                                        <asp:ListView ID="ListView1"
-                                                            ItemType="WebApplicationTest.Models.Category"
-                                                            runat="server"
-                                                            SelectMethod="GetCategories">
-                                                            <ItemTemplate>
-                                                                <span>
-                                                                    <li>
-                                                                        <a href="<%#: GetRouteUrl("ProductsByCategoryRoute", new {categoryName = Item.FoodType}) %>">
-                                                                            <%#: Item.FoodType %>
-                                                                        </a>
-                                                                    </li>
-                                                                </span>
-                                                            </ItemTemplate>
-                                                            <ItemSeparatorTemplate>
-                                                            </ItemSeparatorTemplate>
-                                                        </asp:ListView>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <ul class="multi-column-dropdown">
-                                                        <h6>Cuisine</h6>
-                                                        <asp:ListView ID="ListView2"
-                                                            ItemType="WebApplicationTest.Models.Category"
-                                                            runat="server"
-                                                            SelectMethod="GetCategories">
-                                                            <ItemTemplate>
-                                                                <span>
-                                                                    <li>
-                                                                        <a href="<%#: GetRouteUrl("ProductsByCategoryRoute", new {categoryName = Item.Cuisine}) %>">
-                                                                            <%#: Item.Cuisine %>
-                                                                        </a>
-                                                                    </li>
-                                                                </span>
-                                                            </ItemTemplate>
-                                                            <ItemSeparatorTemplate>
-                                                            </ItemSeparatorTemplate>
-                                                        </asp:ListView>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <ul class="multi-column-dropdown">
-                                                        <h6>Box type</h6>
-                                                        <asp:ListView ID="ListView3"
-                                                            ItemType="WebApplicationTest.Models.Category"
-                                                            runat="server"
-                                                            SelectMethod="GetCategories">
-                                                            <ItemTemplate>
-                                                                <span>
-                                                                    <li>
-                                                                        <a href="<%#: GetRouteUrl("ProductsByCategoryRoute", new {categoryName = Item.BoxType}) %>">
-                                                                            <%#: Item.BoxType %>
-                                                                        </a>
-                                                                    </li>
-                                                                </span>
-                                                            </ItemTemplate>
-                                                            <ItemSeparatorTemplate>
-                                                            </ItemSeparatorTemplate>
-                                                        </asp:ListView>
-
-                                                    </ul>
-                                                </div>
+                                                    <div class="col-sm-4">
+                                                        <ul class="multi-column-dropdown">
+                                                            <h6>Food type</h6>
+                                                            <asp:ListView ID="ListView1"
+                                                                ItemType="WebApplicationTest.Models.Category"
+                                                                runat="server"
+                                                                SelectMethod="GetCategories">
+                                                                <ItemTemplate>
+                                                                    <span>
+                                                                        <li>
+                                                                            <a href="<%#: GetRouteUrl("ProductsByCategoryRoute", new {categoryName = Item.CategoryName}) %>">
+                                                                                <%#: Item.CategoryName %>
+                                                                            </a>
+                                                                        </li>
+                                                                    </span>
+                                                                </ItemTemplate>
+                                                                <ItemSeparatorTemplate>
+                                                                </ItemSeparatorTemplate>
+                                                            </asp:ListView>
+                                                            <h6>More</h6>
+                                                        </ul>
+                                                    </div>
                                                 <div class="clearfix"></div>
                                             </div>
                                         </ul>
@@ -205,96 +163,96 @@
             </div>
         </div>
 
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
-            </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
 
-    <div class="subscribe agileits-w3layouts">
-        <div class="container">
-            <div class="col-md-6 social-icons w3-agile-icons">
-                <h4>Keep in touch</h4>
-                <ul>
-                    <li><a href="#" class="fa fa-facebook icon facebook"></a></li>
-                    <li><a href="#" class="fa fa-twitter icon twitter"></a></li>
-                    <li><a href="#" class="fa fa-google-plus icon googleplus"></a></li>
-                    <li><a href="#" class="fa fa-dribbble icon dribbble"></a></li>
-                    <li><a href="#" class="fa fa-rss icon rss"></a></li>
-                </ul>
-                <ul class="apps">
-                    <li>
-                        <h4>Download Our app : </h4>
-                    </li>
-                    <li><a href="#" class="fa fa-apple"></a></li>
-                    <li><a href="#" class="fa fa-windows"></a></li>
-                    <li><a href="#" class="fa fa-android"></a></li>
-                </ul>
-            </div>
-            <div class="col-md-6 subscribe-right">
-                <h3 class="w3ls-title">Subscribe to Our
+        <div class="subscribe agileits-w3layouts">
+            <div class="container">
+                <div class="col-md-6 social-icons w3-agile-icons">
+                    <h4>Keep in touch</h4>
+                    <ul>
+                        <li><a href="#" class="fa fa-facebook icon facebook"></a></li>
+                        <li><a href="#" class="fa fa-twitter icon twitter"></a></li>
+                        <li><a href="#" class="fa fa-google-plus icon googleplus"></a></li>
+                        <li><a href="#" class="fa fa-dribbble icon dribbble"></a></li>
+                        <li><a href="#" class="fa fa-rss icon rss"></a></li>
+                    </ul>
+                    <ul class="apps">
+                        <li>
+                            <h4>Download Our app : </h4>
+                        </li>
+                        <li><a href="#" class="fa fa-apple"></a></li>
+                        <li><a href="#" class="fa fa-windows"></a></li>
+                        <li><a href="#" class="fa fa-android"></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 subscribe-right">
+                    <h3 class="w3ls-title">Subscribe to Our
                     <br>
-                    <span>Newsletter</span></h3>
-                <form action="#" method="post">
-                    <input type="email" name="email" placeholder="Enter your Email..." required="">
-                    <input type="submit" value="Subscribe">
-                    <div class="clearfix"></div>
-                </form>
-                <img src="../../Content/images/i1.png" class="sub-w3lsimg" alt="" />
-            </div>
-            <div class="clearfix"></div>
-        </div>
-    </div>
-            
-        <div class="footer agileits-w3layouts">
-                <div class="container">
-                    <div class="w3_footer_grids">
-                        <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
-                            <h3>company</h3>
-                            <ul>
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
-                                <li><a href="careers.html">Careers</a></li>
-                                <li><a href="help.html">Partner With Us</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
-                            <h3>help</h3>
-                            <ul>
-                                <li><a href="faq.html">FAQ</a></li>
-                                <li><a href="login.html">Returns</a></li>
-                                <li><a href="login.html">Order Status</a></li>
-                                <li><a href="offers.html">Offers</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
-                            <h3>policy info</h3>
-                            <ul>
-                                <li><a href="terms.html">Terms & Conditions</a></li>
-                                <li><a href="privacy.html">Privacy Policy</a></li>
-                                <li><a href="login.html">Return Policy</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
-                            <h3>Menu</h3>
-                            <ul>
-                                <li><a href="menu.html">All Day Menu</a></li>
-                                <li><a href="menu.html">Lunch</a></li>
-                                <li><a href="menu.html">Dinner</a></li>
-                                <li><a href="menu.html">Flavours</a></li>
-                            </ul>
-                        </div>
+                        <span>Newsletter</span></h3>
+                    <form action="#" method="post">
+                        <input type="email" name="email" placeholder="Enter your Email..." required="">
+                        <input type="submit" value="Subscribe">
                         <div class="clearfix"></div>
-                    </div>
+                    </form>
+                    <img src="../../Content/images/i1.png" class="sub-w3lsimg" alt="" />
                 </div>
+                <div class="clearfix"></div>
             </div>
-            <div class="copyw3-agile">
-                <div class="container">
-                    <p>&copy; 2017 Raclette. All rights reserved | Design by <a href="https://vk.com/nosferatu500">Me</a></p>
-                </div>
-            </div>
+        </div>
 
-            <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Raclette</p>
-            </footer>
+        <div class="footer agileits-w3layouts">
+            <div class="container">
+                <div class="w3_footer_grids">
+                    <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
+                        <h3>company</h3>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="careers.html">Careers</a></li>
+                            <li><a href="help.html">Partner With Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
+                        <h3>help</h3>
+                        <ul>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="login.html">Returns</a></li>
+                            <li><a href="login.html">Order Status</a></li>
+                            <li><a href="offers.html">Offers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
+                        <h3>policy info</h3>
+                        <ul>
+                            <li><a href="terms.html">Terms & Conditions</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="login.html">Return Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
+                        <h3>Menu</h3>
+                        <ul>
+                            <li><a href="menu.html">All Day Menu</a></li>
+                            <li><a href="menu.html">Lunch</a></li>
+                            <li><a href="menu.html">Dinner</a></li>
+                            <li><a href="menu.html">Flavours</a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <div class="copyw3-agile">
+            <div class="container">
+                <p>&copy; 2017 Raclette. All rights reserved | Design by <a href="https://vk.com/nosferatu500">Me</a></p>
+            </div>
+        </div>
+
+        <hr />
+        <footer>
+            <p>&copy; <%: DateTime.Now.Year %> - Raclette</p>
+        </footer>
     </form>
     <script>
         w3ls.render();

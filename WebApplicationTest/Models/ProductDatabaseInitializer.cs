@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
-using WebApplicationTest.Models.Categor;
 
 namespace WebApplicationTest.Models
 {
@@ -21,37 +20,27 @@ namespace WebApplicationTest.Models
                 new Category
                 {
                     CategoryID = 1,
-                    FoodType = Food.Lunch.ToString(),
-                    Cuisine = Cuisine.Indian.ToString(),
-                    BoxType = Box.Diet.ToString()
+                    CategoryName = "Breakfast"
                 },
                 new Category
                 {
                     CategoryID = 2,
-                    FoodType = Food.Breakfast.ToString(),
-                    Cuisine = Cuisine.Indian.ToString(),
-                    BoxType = Box.Diet.ToString()
+                    CategoryName = "Salads"
                 },
                 new Category
                 {
                     CategoryID = 3,
-                    FoodType = Food.Breakfast.ToString(),
-                    Cuisine = Cuisine.Indian.ToString(),
-                    BoxType = Box.Diet.ToString()
+                    CategoryName = "Hot Food"
                 },
                 new Category
                 {
                     CategoryID = 4,
-                    FoodType = Food.Breakfast.ToString(),
-                    Cuisine = Cuisine.Indian.ToString(),
-                    BoxType = Box.Diet.ToString()
+                    CategoryName = "Drinks"
                 },
                 new Category
                 {
                     CategoryID = 5,
-                    FoodType = Food.Breakfast.ToString(),
-                    Cuisine = Cuisine.Indian.ToString(),
-                    BoxType = Box.Diet.ToString()
+                    CategoryName = "Dinner"
                 },
             };
 
