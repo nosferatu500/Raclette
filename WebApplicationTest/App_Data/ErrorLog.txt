@@ -232,3 +232,144 @@ Stack Trace:
    at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
    at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
 
+********** 15.02.2017 16:02:39 **********
+Exception Type: System.InvalidOperationException
+Exception: The property 'FoodType' is not a String or Byte array. Length can only be configured for String and Byte array properties.
+Source: Page_Error - Default.aspx
+Stack Trace: 
+   at System.Data.Entity.ModelConfiguration.Configuration.ConventionPrimitivePropertyConfiguration.HasMaxLength(Int32 maxLength)
+   at System.Data.Entity.ModelConfiguration.Conventions.StringLengthAttributeConvention.Apply(ConventionPrimitivePropertyConfiguration configuration, StringLengthAttribute attribute)
+   at System.Data.Entity.ModelConfiguration.Conventions.PrimitivePropertyAttributeConfigurationConvention`1.<.ctor>b__0(ConventionPrimitivePropertyConfiguration configuration, IEnumerable`1 attributes)
+   at System.Data.Entity.ModelConfiguration.Conventions.PropertyConventionWithHaving`1.ApplyCore(PropertyInfo memberInfo, Func`1 configuration, ModelConfiguration modelConfiguration)
+   at System.Data.Entity.ModelConfiguration.Conventions.PropertyConventionBase.Apply(PropertyInfo memberInfo, Func`1 configuration, ModelConfiguration modelConfiguration)
+   at System.Data.Entity.ModelConfiguration.Configuration.ConventionsConfiguration.PropertyConfigurationConventionDispatcher.Dispatch[TPropertyConfiguration]()
+   at System.Data.Entity.ModelConfiguration.Configuration.ConventionsConfiguration.PropertyConfigurationConventionDispatcher.Dispatch()
+   at System.Data.Entity.ModelConfiguration.Configuration.ConventionsConfiguration.ApplyPropertyConfiguration(PropertyInfo propertyInfo, Func`1 propertyConfiguration, ModelConfiguration modelConfiguration)
+   at System.Data.Entity.ModelConfiguration.Conventions.Convention.ApplyPropertyConfiguration(PropertyInfo propertyInfo, Func`1 propertyConfiguration, ModelConfiguration modelConfiguration)
+   at System.Data.Entity.ModelConfiguration.Configuration.ConventionsConfiguration.ApplyPropertyConfiguration(PropertyInfo propertyInfo, Func`1 propertyConfiguration, ModelConfiguration modelConfiguration)
+   at System.Data.Entity.ModelConfiguration.Mappers.PropertyMapper.MapPrimitiveOrComplexOrEnumProperty(PropertyInfo propertyInfo, Func`1 structuralTypeConfiguration, Boolean discoverComplexTypes)
+   at System.Data.Entity.ModelConfiguration.Mappers.PropertyMapper.MapIfNotNavigationProperty(PropertyInfo propertyInfo, EntityType entityType, Func`1 entityTypeConfiguration)
+   at System.Data.Entity.ModelConfiguration.Mappers.TypeMapper.<>c__DisplayClass14.<MapEntityType>b__e(PropertyMapper m, PropertyInfo p)
+   at System.Data.Entity.ModelConfiguration.Mappers.TypeMapper.MapStructuralElements[TStructuralTypeConfiguration](Type type, ICollection`1 annotations, Action`2 propertyMappingAction, Func`1 structuralTypeConfiguration)
+   at System.Data.Entity.ModelConfiguration.Mappers.TypeMapper.MapEntityType(Type type)
+   at System.Data.Entity.DbModelBuilder.MapTypes(EdmModel model)
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   at WebApplicationTest.Logic.ShoppingCartActions.GetCount() in E:\Work\ASP.NETProjects\WebApplicationTest\WebApplicationTest\Logic\ShoppingCartActions.cs:line 201
+   at WebApplicationTest.SiteMaster.Page_PreRender(Object sender, EventArgs e) in E:\Work\ASP.NETProjects\WebApplicationTest\WebApplicationTest\Site.Master.cs:line 85
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnPreRender(EventArgs e)
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 15.02.2017 16:02:39 **********
+Exception Type: System.Exception
+Exception: The error was unhandled by application code.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 15.02.2017 16:04:47 **********
+Exception Type: System.Exception
+Exception: The error was unhandled by application code.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 15.02.2017 16:06:07 **********
+Exception Type: System.Exception
+Exception: The error was unhandled by application code.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 15.02.2017 16:06:18 **********
+Exception Type: System.Exception
+Exception: The error was unhandled by application code.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 15.02.2017 16:11:11 **********
+Exception Type: System.Exception
+Exception: The error was unhandled by application code.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 15.02.2017 16:18:46 **********
+Exception Type: System.Exception
+Exception: The error was unhandled by application code.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 15.02.2017 16:20:20 **********
+Exception Type: System.Exception
+Exception: The error was unhandled by application code.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 15.02.2017 16:27:54 **********
+Exception Type: System.Exception
+Exception: The error was unhandled by application code.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 15.02.2017 16:46:53 **********
+Inner Exception Type: System.Data.SqlClient.SqlException
+Inner Exception: Cannot drop database "TestDB" because it is currently in use.
+Inner Source: .Net SqlClient Data Provider
+Inner Stack Trace: 
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<NonQuery>b__0(DbCommand t, DbCommandInterceptionContext`1 c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.NonQuery(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.SqlServer.SqlProviderServices.<>c__DisplayClass30.<DropDatabase>b__2e(DbConnection conn)
+   at System.Data.Entity.SqlServer.SqlProviderServices.<>c__DisplayClass33.<UsingConnection>b__32()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass1.<Execute>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingMasterConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.DropDatabase(SqlConnection sqlConnection, Nullable`1 commandTimeout, String databaseName)
+   at System.Data.Entity.SqlServer.SqlProviderServices.DbDeleteDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   at System.Data.Entity.Core.Common.DbProviderServices.DeleteDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   at System.Data.Entity.Core.Objects.ObjectContext.DeleteDatabase()
+   at System.Data.Entity.Internal.DatabaseOperations.Delete(ObjectContext objectContext)
+   at System.Data.Entity.Database.Delete()
+   at System.Data.Entity.DropCreateDatabaseAlways`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   at System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   at WebApplicationTest.Logic.ShoppingCartActions.GetCount() in E:\Work\ASP.NETProjects\WebApplicationTest\WebApplicationTest\Logic\ShoppingCartActions.cs:line 201
+   at WebApplicationTest.SiteMaster.Page_PreRender(Object sender, EventArgs e) in E:\Work\ASP.NETProjects\WebApplicationTest\WebApplicationTest\Site.Master.cs:line 85
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnPreRender(EventArgs e)
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+

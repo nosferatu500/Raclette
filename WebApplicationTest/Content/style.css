@@ -43,9 +43,18 @@ body a:focus {
     -o-background-size: cover;
     -ms-background-size: cover; 
 }
+
+.head-one {
+    background: #292b3f;
+}
+
+.head-two {
+    background: #E24744;
+}
+
 /*-- header --*/
 .w3ls-header {
-    background: rgba(64, 68, 105, 0.54);
+   /*background: rgba(64, 68, 105, 0.54);*/
     padding: 0.8em 0;
 }
 .w3ls-header-left {
@@ -109,8 +118,8 @@ body a:focus {
 .navigation {
     padding: 0 0 0.6em;
     text-align: center;
-    background: rgba(253, 70, 62, 0.84);
-	position: relative;
+    /*background: rgba(253, 70, 62, 0.84);*/
+    position: relative;
 } 
 .w3ls_products_pos h4 {
     font-size: 2em;
@@ -1719,11 +1728,11 @@ p.single-price-text {
 } 
 /*-- //modal --*/
 /*-- about --*/ 
-.history h3.w3ls-title {
+/*.history h3.w3ls-title {
     font-size: 1.8em;
     margin: 2em 0 0.5em;
     text-align: left;
-}
+}*/
 /*-- footer-top --*/  
 .ftr-top-left {
     float: left; 
@@ -3023,10 +3032,10 @@ p.w3lsorder-text {
 .ftr-top-right { 
     width: 90%;
 }
-.history h3.w3ls-title {
+/*.history h3.w3ls-title {
     font-size: 1.6em; 
 	margin: 1em 0 0.5em;
-}
+}*/
 .login-agileinfo {
     width: 60%;
 }

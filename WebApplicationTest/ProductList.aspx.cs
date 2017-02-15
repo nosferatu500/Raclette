@@ -6,6 +6,7 @@ using System.Web.ModelBinding;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using WebApplicationTest.Models;
+using WebApplicationTest.Models.Categor;
 
 namespace WebApplicationTest
 {
@@ -28,7 +29,9 @@ namespace WebApplicationTest
 
             if (!String.IsNullOrEmpty(categoryName))
             {
-                query = query.Where(p => String.Compare(p.Category.CategoryName, categoryName) == 0);
+                query = query.Where(p => String.Compare(p.Category.FoodType, categoryName) == 0 ||
+                                         String.Compare(p.Category.Cuisine, categoryName) == 0 ||
+                                         String.Compare(p.Category.BoxType, categoryName) == 0);
             }
             return query;
         }

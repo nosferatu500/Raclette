@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
+using WebApplicationTest.Models.Categor;
 
 namespace WebApplicationTest.Models
 {
-    public class ProductDatabaseInitializer : DropCreateDatabaseIfModelChanges<ProductContext>
+    public class ProductDatabaseInitializer : DropCreateDatabaseAlways<ProductContext>//DropCreateDatabaseIfModelChanges<ProductContext>
     {
         protected override void Seed(ProductContext context)
         {
@@ -20,27 +21,37 @@ namespace WebApplicationTest.Models
                 new Category
                 {
                     CategoryID = 1,
-                    CategoryName = "Cars"
+                    FoodType = Food.Lunch.ToString(),
+                    Cuisine = Cuisine.Indian.ToString(),
+                    BoxType = Box.Diet.ToString()
                 },
                 new Category
                 {
                     CategoryID = 2,
-                    CategoryName = "Planes"
+                    FoodType = Food.Breakfast.ToString(),
+                    Cuisine = Cuisine.Indian.ToString(),
+                    BoxType = Box.Diet.ToString()
                 },
                 new Category
                 {
                     CategoryID = 3,
-                    CategoryName = "Trucks"
+                    FoodType = Food.Breakfast.ToString(),
+                    Cuisine = Cuisine.Indian.ToString(),
+                    BoxType = Box.Diet.ToString()
                 },
                 new Category
                 {
                     CategoryID = 4,
-                    CategoryName = "Boats"
+                    FoodType = Food.Breakfast.ToString(),
+                    Cuisine = Cuisine.Indian.ToString(),
+                    BoxType = Box.Diet.ToString()
                 },
                 new Category
                 {
                     CategoryID = 5,
-                    CategoryName = "Rockets"
+                    FoodType = Food.Breakfast.ToString(),
+                    Cuisine = Cuisine.Indian.ToString(),
+                    BoxType = Box.Diet.ToString()
                 },
             };
 
