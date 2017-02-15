@@ -492,6 +492,9 @@
     <Compile Include="Logic\ShoppingCartActions.cs" />
     <Compile Include="Models\CartItem.cs" />
     <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\Categor\Box.cs" />
+    <Compile Include="Models\Categor\Cuisine.cs" />
+    <Compile Include="Models\Categor\Food.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\OrderDetail.cs" />
