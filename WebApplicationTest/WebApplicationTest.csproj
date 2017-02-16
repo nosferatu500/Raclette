@@ -222,9 +222,13 @@
     <Content Include="Content\images\move-up.png" />
     <Content Include="Content\images\s1.jpg" />
     <Content Include="Content\images\temp.jpg" />
+    <Content Include="Content\images\Temp\1.jpg" />
+    <Content Include="Content\images\Temp\bg.jpg" />
     <Content Include="Content\images\tick.png" />
     <Content Include="Content\owl.carousel.css" />
     <Content Include="Content\style.css" />
+    <Content Include="Content\Temp\dscountdown.css" />
+    <Content Include="Content\Temp\style.css" />
     <Content Include="Default.aspx" />
     <Content Include="ErrorPage.aspx" />
     <Content Include="FAQ.aspx" />
@@ -277,6 +281,10 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\SmoothScroll.min.js" />
+    <Content Include="Scripts\Temp\demo-1.js" />
+    <Content Include="Scripts\Temp\dscountdown.min.js" />
+    <Content Include="Scripts\Temp\jquery-2.1.4.min.js" />
+    <Content Include="Scripts\Temp\particles.min.js" />
     <Content Include="Scripts\WebForms\DetailsView.js" />
     <Content Include="Scripts\WebForms\Focus.js" />
     <Content Include="Scripts\WebForms\GridView.js" />
@@ -300,6 +308,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="ShoppingCart.aspx" />
     <Content Include="Site.Master" />
+    <Content Include="TempPage.aspx" />
     <Content Include="Terms.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -609,6 +618,13 @@
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="TempPage.aspx.cs">
+      <DependentUpon>TempPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TempPage.aspx.designer.cs">
+      <DependentUpon>TempPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Terms.aspx.cs">
       <DependentUpon>Terms.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -29,9 +29,9 @@
                         <li class="dropdown head-dpdn">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Food Type<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="~/Category/Breakfast">Breakfast</a></li>
-                                <li><a href="~/Category/Lunch">Lunch</a></li>
-                                <li><a href="~/Category/Dinner">Dinner</a></li>
+                                <li><a href="Breakfast">Breakfast</a></li>
+                                <li><a href="Lunch">Lunch</a></li>
+                                <li><a href="Dinner">Dinner</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -138,25 +138,25 @@
                         <ul class="faq">
                             <li class="item1"><a href="#">Indian Food<span class="glyphicon glyphicon-menu-down"></span></a>
                                 <ul>
-                                    <li class="subitem1"><a href="~/Category/Breakfast">Breakfast</a></li>
-                                    <li class="subitem1"><a href="~/Category/Lunch">Lunch</a></li>
-                                    <li class="subitem1"><a href="~/Category/Dinner">Dinner</a></li>
-                                    <li class="subitem1"><a href="~/Category/Trending">Trending Food</a></li>
+                                    <li class="subitem1"><a href="Breakfast">Breakfast</a></li>
+                                    <li class="subitem1"><a href="Lunch">Lunch</a></li>
+                                    <li class="subitem1"><a href="Dinner">Dinner</a></li>
+                                    <li class="subitem1"><a href="Trending">Trending Food</a></li>
                                 </ul>
                             </li>
                             <li class="item2"><a href="#">Italian Food<span class="glyphicon glyphicon-menu-down"></span></a>
                                 <ul>
-                                    <li class="subitem1"><a href="~/Category/Panzanella">Panzanella</a></li>
-                                    <li class="subitem1"><a href="~/Category/Pizza">Margherita Pizza </a></li>
-                                    <li class="subitem1"><a href="~/Category/PannaCotta">Panna Cotta</a></li>
-                                    <li class="subitem1"><a href="~/Category/Cannelloni">Corn Cannelloni</a></li>
+                                    <li class="subitem1"><a href="Panzanella">Panzanella</a></li>
+                                    <li class="subitem1"><a href="Pizza">Margherita Pizza </a></li>
+                                    <li class="subitem1"><a href="PannaCotta">Panna Cotta</a></li>
+                                    <li class="subitem1"><a href="Cannelloni">Corn Cannelloni</a></li>
                                 </ul>
                             </li>
                             <li class="item3"><a href="#">American Food<span class="glyphicon glyphicon-menu-down"></span></a>
                                 <ul>
-                                    <li class="subitem1"><a href="~/Category/Sandwiches">Sandwiches</a></li>
-                                    <li class="subitem1"><a href="~/Category/Hotdog">Hot dog</a></li>
-                                    <li class="subitem1"><a href="~/Category/Chicken">Chicken bog</a></li>
+                                    <li class="subitem1"><a href="Sandwiches">Sandwiches</a></li>
+                                    <li class="subitem1"><a href="Hotdog">Hot dog</a></li>
+                                    <li class="subitem1"><a href="Chicken">Chicken bog</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -282,7 +282,7 @@
                                 <span>Neque porro quisquam est qui dolorem </span>
                             </div>
                         </a>
-                        <a runat="server" href="~/~/Category/S5" class="item g1">
+                        <a runat="server" href="~/Category/S5" class="item g1">
                             <img class="lazyOwl" src="../../Content/images/g5.jpg" alt="" />
                             <div class="agile-dish-caption">
                                 <h4>Duis congue</h4>
