@@ -8,7 +8,7 @@ namespace WebApplicationTest.Models
 {
     public class ProductContext : DbContext
     {
-        public ProductContext() : base("TestDB")
+        public ProductContext() : base("MS_TableConnectionStringProduct")
         {
         }
         public DbSet<Category> Categories { get; set; }
