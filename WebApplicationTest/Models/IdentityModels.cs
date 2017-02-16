@@ -30,7 +30,7 @@ namespace WebApplicationTest.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("MS_TableConnectionString", throwIfV1Schema: false)
+            : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
 
