@@ -209,27 +209,27 @@
                     <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
                         <h3>help</h3>
                         <ul>
-                            <li><a href="faq.html">FAQ</a></li>
-                            <li><a href="login.html">Returns</a></li>
-                            <li><a href="login.html">Order Status</a></li>
-                            <li><a href="offers.html">Offers</a></li>
+                            <li><a runat="server" href="~/FAQ">FAQ</a></li>
+                            <li><a runat="server" href="~/Returns">Returns</a></li>
+                            <li><a runat="server" href="~/OrderStatus">Order Status</a></li>
+                            <li><a runat="server" href="~/Offers">Offers</a></li>
                         </ul>
                     </div>
                     <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
                         <h3>policy info</h3>
                         <ul>
-                            <li><a href="terms.html">Terms & Conditions</a></li>
-                            <li><a href="privacy.html">Privacy Policy</a></li>
-                            <li><a href="login.html">Return Policy</a></li>
+                            <li><a runat="server" href="~/Returns">Terms & Conditions</a></li>
+                            <li><a runat="server" href="~/Returns">Privacy Policy</a></li>
+                            <li><a runat="server" href="~/Returns">Return Policy</a></li>
                         </ul>
                     </div>
                     <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
                         <h3>Menu</h3>
                         <ul>
-                            <li><a href="menu.html">All Day Menu</a></li>
-                            <li><a href="menu.html">Lunch</a></li>
-                            <li><a href="menu.html">Dinner</a></li>
-                            <li><a href="menu.html">Flavours</a></li>
+                            <li><a runat="server" href="~/Returns">All Day Menu</a></li>
+                            <li><a runat="server" href="~/Returns">Lunch</a></li>
+                            <li><a runat="server" href="~/Returns">Dinner</a></li>
+                            <li><a runat="server" href="~/Returns">Flavours</a></li>
                         </ul>
                     </div>
                     <div class="clearfix"></div>
