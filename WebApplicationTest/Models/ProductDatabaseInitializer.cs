@@ -6,7 +6,7 @@ using System.Web;
 
 namespace WebApplicationTest.Models
 {
-    public class ProductDatabaseInitializer : DropCreateDatabaseAlways<ProductContext>//DropCreateDatabaseIfModelChanges<ProductContext>
+    public class ProductDatabaseInitializer : DropCreateDatabaseIfModelChanges<ProductContext>
     {
         protected override void Seed(ProductContext context)
         {
