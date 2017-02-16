@@ -221,6 +221,7 @@
     <Content Include="Content\images\img3.jpg" />
     <Content Include="Content\images\move-up.png" />
     <Content Include="Content\images\s1.jpg" />
+    <Content Include="Content\images\temp.jpg" />
     <Content Include="Content\images\tick.png" />
     <Content Include="Content\owl.carousel.css" />
     <Content Include="Content\style.css" />
@@ -255,7 +256,6 @@
     <Content Include="Partner.aspx" />
     <Content Include="Privacy.aspx" />
     <Content Include="ProductDetails.aspx" />
-    <Content Include="ProductList.aspx" />
     <Content Include="Products.aspx" />
     <Content Include="ReturnPolicy.aspx" />
     <Content Include="Returns.aspx" />
@@ -564,13 +564,6 @@
     </Compile>
     <Compile Include="ProductDetails.aspx.designer.cs">
       <DependentUpon>ProductDetails.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ProductList.aspx.cs">
-      <DependentUpon>ProductList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ProductList.aspx.designer.cs">
-      <DependentUpon>ProductList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Products.aspx.cs">
       <DependentUpon>Products.aspx</DependentUpon>

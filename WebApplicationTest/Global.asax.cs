@@ -36,7 +36,7 @@ namespace WebApplicationTest
             routes.MapPageRoute(
                 "ProductsByCategoryRoute",
                 "Category/{categoryName}",
-                "~/ProductList.aspx"
+                "~/Products.aspx"
             );
             routes.MapPageRoute(
                 "ProductByNameRoute",

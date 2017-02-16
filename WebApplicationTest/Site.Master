@@ -109,43 +109,7 @@
                                         href="~/Admin/AdminPage">Admin</a></li>
                                     <li><a runat="server" href="~/" class="active">Home</a></li>
                                     <li><a runat="server" href="~/Menu" >Menu</a></li>
-                                    <!-- Mega Menu -->
-                                   <!-- <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
-                                        <ul class="dropdown-menu multi-column columns-3">
-                                            <div class="row">
-                                                    <div class="col-sm-4">
-                                                        <ul class="multi-column-dropdown">
-                                                            <h6>Food type</h6>
-                                                            <asp:ListView ID="ListView1"
-                                                                ItemType="WebApplicationTest.Models.Category"
-                                                                runat="server"
-                                                                SelectMethod="GetCategories">
-                                                                <ItemTemplate>
-                                                                    <span>
-                                                                        <li>
-                                                                            <a href="<%#: GetRouteUrl("ProductsByCategoryRoute", new {categoryName = Item.CategoryName}) %>">
-                                                                             <%#: Item.CategoryName %>
-                                                                            </a>
-                                                                        </li>
-                                                                    </span>
-                                                                </ItemTemplate>
-                                                                <ItemSeparatorTemplate>
-                                                                </ItemSeparatorTemplate>
-                                                            </asp:ListView>
-                                                            <h6>More</h6>
-                                                        </ul>
-                                                    </div>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                        </ul>
-                                    </li>-->
                                     <li><a runat="server" href="~/About">About</a></li>
-                                    <li class="w3pages"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Test menu <span class="caret"></span></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a runat="server" href="~/ProductList">Show all (Test)</a></li>
-                                        </ul>
-                                    </li>
                                     <li><a runat="server" href="~/Contact">Contact Us</a></li>
                                     <li><a class="w3view-cart" runat="server" href="~/ShoppingCart" id="cartCount"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></a></li>
                                 </ul>

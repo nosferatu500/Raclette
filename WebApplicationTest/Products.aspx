@@ -44,7 +44,9 @@
                         <EmptyDataTemplate>
                             <table>
                                 <tr>
-                                    <td>No data was returned.</td>
+                                    <td><h2 class="text-center">Sorry, but the products of this category are not available.</h2>
+                                        <img src="../../Content/images/temp.jpg" class="img-responsive" alt="img">
+                                    </td>
                                 </tr>
                             </table>
                         </EmptyDataTemplate>
@@ -91,9 +93,6 @@
                                                         </a>
                                                         <span class="w3-agile-line"></span>
                                                         <a href="#" data-toggle="modal" data-target="#myModal<%#:Item.ProductID %>">More</a>
-
-
-
 
                                                     </form>
                                                 </div>

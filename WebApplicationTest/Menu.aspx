@@ -18,40 +18,40 @@
 			<p class="w3lsorder-text">Here your Raclette Food Varieties</p>
 			<div class="menu-agileinfo">  
 				<div class="col-md-4 col-sm-4 col-xs-6 menu-w3lsgrids"> 
-					<a runat="server" href="~/Products"> Breakfast</a>
+					<a runat="server" href="~/Category/Breakfast"> Breakfast</a>
 				</div> 
 				<div class="col-md-4 col-sm-4 col-xs-6 menu-w3lsgrids"> 
-					<a runat="server" href="~/Products"> Salads</a>
+					<a runat="server" href="~/Category/Salads"> Salads</a>
 				</div> 
 				<div class="col-md-4 col-sm-4 col-xs-6 menu-w3lsgrids"> 
-					<a runat="server" href="~/Products"> Hot Food</a>
+					<a runat="server" href="~/Category/Hot"> Hot Food</a>
 				</div> 
 				<div class="col-md-4 col-sm-4 col-xs-6 menu-w3lsgrids"> 
-					<a runat="server" href="~/Products"> Breads</a>
+					<a runat="server" href="~/Category/Breads"> Breads</a>
 				</div> 
 				<div class="col-md-4 col-sm-4 col-xs-6 menu-w3lsgrids"> 
-					<a runat="server" href="~/Products"> Deli Pots & Little Pots</a>
+					<a runat="server" href="~/Category/Pots"> Deli Pots & Little Pots</a>
 				</div> 
 				<div class="col-md-4 col-sm-4 col-xs-6 menu-w3lsgrids"> 
-					<a runat="server" href="~/Products"> Snacks & Treats</a>
+					<a runat="server" href="~/Category/Snacks"> Snacks & Treats</a>
 				</div> 
 				<div class="col-md-4 col-sm-4 col-xs-6 menu-w3lsgrids"> 
-					<a runat="server" href="~/Products"> Drinks</a>
+					<a runat="server" href="~/Category/Drinks"> Drinks</a>
 				</div> 
 				<div class="col-md-4 col-sm-4 col-xs-6 menu-w3lsgrids"> 
-					<a runat="server" href="~/Products"> South Indian</a>
+					<a runat="server" href="~/Category/SouthIndian"> South Indian</a>
 				</div> 
 				<div class="col-md-4 col-sm-4 col-xs-6 menu-w3lsgrids"> 
-					<a runat="server" href="~/Products"> Catering</a>
+					<a runat="server" href="~/Category/Catering"> Catering</a>
 				</div> 
 				<div class="col-md-4 col-sm-4 col-xs-6 menu-w3lsgrids"> 
-					<a runat="server" href="~/Products"> Soups</a>
+					<a runat="server" href="~/Category/Soups"> Soups</a>
 				</div> 
 				<div class="col-md-4 col-sm-4 col-xs-6 menu-w3lsgrids"> 
-					<a runat="server" href="~/Products"> Lunchbox</a>
+					<a runat="server" href="~/Category/Lunchbox"> Lunchbox</a>
 				</div> 
 				<div class="col-md-4 col-sm-4 col-xs-6 menu-w3lsgrids"> 
-					<a runat="server" href="~/Products"> Dinner</a>
+					<a runat="server" href="~/Category/Dinner"> Dinner</a>
 				</div> 
 				<div class="clearfix"> </div> 
 			</div> 
