@@ -253,9 +253,11 @@
     <Content Include="Offers.aspx" />
     <Content Include="OrderStatus.aspx" />
     <Content Include="Partner.aspx" />
+    <Content Include="Privacy.aspx" />
     <Content Include="ProductDetails.aspx" />
     <Content Include="ProductList.aspx" />
     <Content Include="Products.aspx" />
+    <Content Include="ReturnPolicy.aspx" />
     <Content Include="Returns.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -298,6 +300,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="ShoppingCart.aspx" />
     <Content Include="Site.Master" />
+    <Content Include="Terms.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -548,6 +551,13 @@
     <Compile Include="Partner.aspx.designer.cs">
       <DependentUpon>Partner.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Privacy.aspx.cs">
+      <DependentUpon>Privacy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Privacy.aspx.designer.cs">
+      <DependentUpon>Privacy.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ProductDetails.aspx.cs">
       <DependentUpon>ProductDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -570,6 +580,13 @@
       <DependentUpon>Products.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReturnPolicy.aspx.cs">
+      <DependentUpon>ReturnPolicy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReturnPolicy.aspx.designer.cs">
+      <DependentUpon>ReturnPolicy.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Returns.aspx.cs">
       <DependentUpon>Returns.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -599,6 +616,13 @@
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="Terms.aspx.cs">
+      <DependentUpon>Terms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Terms.aspx.designer.cs">
+      <DependentUpon>Terms.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

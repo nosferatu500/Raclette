@@ -81,10 +81,10 @@
                                     </LoggedInTemplate>
                                 </asp:LoginView>
                                 <li class="head-dpdn">
-                                    <a href="offers.html"><i class="fa fa-gift" aria-hidden="true"></i>Offers</a>
+                                    <a runat="server" href="~/Offers"><i class="fa fa-gift" aria-hidden="true"></i>Offers</a>
                                 </li>
                                 <li class="head-dpdn">
-                                    <a href="help.html"><i class="fa fa-question-circle" aria-hidden="true"></i>Help</a>
+                                    <a runat="server" href="~/FAQ"><i class="fa fa-question-circle" aria-hidden="true"></i>Help</a>
                                 </li>
                             </ul>
                         </div>
@@ -218,18 +218,18 @@
                     <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
                         <h3>policy info</h3>
                         <ul>
-                            <li><a runat="server" href="~/Returns">Terms & Conditions</a></li>
-                            <li><a runat="server" href="~/Returns">Privacy Policy</a></li>
-                            <li><a runat="server" href="~/Returns">Return Policy</a></li>
+                            <li><a runat="server" href="~/Terms">Terms & Conditions</a></li>
+                            <li><a runat="server" href="~/Privacy">Privacy Policy</a></li>
+                            <li><a runat="server" href="~/ReturnPolicy">Return Policy</a></li>
                         </ul>
                     </div>
                     <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
                         <h3>Menu</h3>
                         <ul>
-                            <li><a runat="server" href="~/Returns">All Day Menu</a></li>
-                            <li><a runat="server" href="~/Returns">Lunch</a></li>
-                            <li><a runat="server" href="~/Returns">Dinner</a></li>
-                            <li><a runat="server" href="~/Returns">Flavours</a></li>
+                            <li><a runat="server" href="~/Products">All Day Menu</a></li>
+                            <li><a runat="server" href="~/Products">Lunch</a></li>
+                            <li><a runat="server" href="~/Products">Dinner</a></li>
+                            <li><a runat="server" href="~/Products">Flavours</a></li>
                         </ul>
                     </div>
                     <div class="clearfix"></div>
