@@ -241,11 +241,6 @@
                 <p>&copy; 2017 Raclette. All rights reserved | Design by <a href="https://vk.com/nosferatu500">Me</a></p>
             </div>
         </div>
-
-        <hr />
-        <footer>
-            <p>&copy; <%: DateTime.Now.Year %> - Raclette</p>
-        </footer>
     </form>
     
     <script>
