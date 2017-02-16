@@ -25,14 +25,14 @@
 			<div class="offers-wthreerow2">
 				<div class="add-products-row">
 					<div class="w3ls-add-grids">
-						<a runat="server" href="~/Products"> 
+						<a runat="server" href="~/Category/Cashback"> 
 							<h4>Get <span>10%<br>Cashback</span></h4>
 							<h5>Special Offer Today Only</h5>
 							<h6>Order Now <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></h6>
 						</a>
 					</div>
 					<div class="w3ls-add-grids w3ls-add-grids-right">
-						<a runat="server" href="~/Products"> 
+						<a runat="server" href="~/Category/Offer"> 
 							<h4>GET Upto<span><br>5% Offer</span></h4>
 							<h5>On Order Lunch Today</h5>
 							<h6>Order Now <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></h6>

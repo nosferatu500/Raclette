@@ -191,9 +191,9 @@
                         <h3>Menu</h3>
                         <ul>
                             <li><a runat="server" href="~/Products">All Day Menu</a></li>
-                            <li><a runat="server" href="~/Products">Lunch</a></li>
-                            <li><a runat="server" href="~/Products">Dinner</a></li>
-                            <li><a runat="server" href="~/Products">Flavours</a></li>
+                            <li><a runat="server" href="~/Category/Lunch">Lunch</a></li>
+                            <li><a runat="server" href="~/Category/Dinner">Dinner</a></li>
+                            <li><a runat="server" href="~/Category/Flavours">Flavours</a></li>
                         </ul>
                     </div>
                     <div class="clearfix"></div>

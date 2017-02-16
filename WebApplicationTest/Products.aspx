@@ -29,9 +29,9 @@
                         <li class="dropdown head-dpdn">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Food Type<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Breakfast</a></li>
-                                <li><a href="#">Lunch</a></li>
-                                <li><a href="#">Dinner</a></li>
+                                <li><a href="~/Category/Breakfast">Breakfast</a></li>
+                                <li><a href="~/Category/Lunch">Lunch</a></li>
+                                <li><a href="~/Category/Dinner">Dinner</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -138,25 +138,25 @@
                         <ul class="faq">
                             <li class="item1"><a href="#">Indian Food<span class="glyphicon glyphicon-menu-down"></span></a>
                                 <ul>
-                                    <li class="subitem1"><a href="#">Breakfast</a></li>
-                                    <li class="subitem1"><a href="#">Lunch</a></li>
-                                    <li class="subitem1"><a href="#">Dinner</a></li>
-                                    <li class="subitem1"><a href="#">Trending Food</a></li>
+                                    <li class="subitem1"><a href="~/Category/Breakfast">Breakfast</a></li>
+                                    <li class="subitem1"><a href="~/Category/Lunch">Lunch</a></li>
+                                    <li class="subitem1"><a href="~/Category/Dinner">Dinner</a></li>
+                                    <li class="subitem1"><a href="~/Category/Trending">Trending Food</a></li>
                                 </ul>
                             </li>
                             <li class="item2"><a href="#">Italian Food<span class="glyphicon glyphicon-menu-down"></span></a>
                                 <ul>
-                                    <li class="subitem1"><a href="#">Panzanella</a></li>
-                                    <li class="subitem1"><a href="#">Margherita Pizza </a></li>
-                                    <li class="subitem1"><a href="#">Panna Cotta</a></li>
-                                    <li class="subitem1"><a href="#">Corn Cannelloni</a></li>
+                                    <li class="subitem1"><a href="~/Category/Panzanella">Panzanella</a></li>
+                                    <li class="subitem1"><a href="~/Category/Pizza">Margherita Pizza </a></li>
+                                    <li class="subitem1"><a href="~/Category/PannaCotta">Panna Cotta</a></li>
+                                    <li class="subitem1"><a href="~/Category/Cannelloni">Corn Cannelloni</a></li>
                                 </ul>
                             </li>
                             <li class="item3"><a href="#">American Food<span class="glyphicon glyphicon-menu-down"></span></a>
                                 <ul>
-                                    <li class="subitem1"><a href="#">Sandwiches</a></li>
-                                    <li class="subitem1"><a href="#">Hot dog</a></li>
-                                    <li class="subitem1"><a href="#">Chicken bog</a></li>
+                                    <li class="subitem1"><a href="~/Category/Sandwiches">Sandwiches</a></li>
+                                    <li class="subitem1"><a href="~/Category/Hotdog">Hot dog</a></li>
+                                    <li class="subitem1"><a href="~/Category/Chicken">Chicken bog</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -216,15 +216,15 @@
                 <div class="related-row">
                     <h4>Related Searches</h4>
                     <ul>
-                        <li><a runat="server" href="~/Products">Salads </a></li>
-                        <li><a runat="server" href="~/Products">Vegetarian</a></li>
-                        <li><a runat="server" href="~/Products">Dinner</a></li>
-                        <li><a runat="server" href="~/Products">Diet Soup</a></li>
-                        <li><a runat="server" href="~/Products">Sweets</a></li>
-                        <li><a runat="server" href="~/Products">Seasonal</a></li>
-                        <li><a runat="server" href="~/Products">Breakfast</a></li>
-                        <li><a runat="server" href="~/Products">Italian Food</a></li>
-                        <li><a runat="server" href="~/Products">Meals</a></li>
+                        <li><a runat="server" href="~/Category/Salads">Salads </a></li>
+                        <li><a runat="server" href="~/Category/Vegetarian">Vegetarian</a></li>
+                        <li><a runat="server" href="~/Category/Dinner">Dinner</a></li>
+                        <li><a runat="server" href="~/Category/Soup">Diet Soup</a></li>
+                        <li><a runat="server" href="~/Category/Sweets">Sweets</a></li>
+                        <li><a runat="server" href="~/Category/Seasonal">Seasonal</a></li>
+                        <li><a runat="server" href="~/Category/Breakfast">Breakfast</a></li>
+                        <li><a runat="server" href="~/Category/Italian">Italian Food</a></li>
+                        <li><a runat="server" href="~/Category/Meals">Meals</a></li>
                     </ul>
                 </div>
                 <div class="related-row">
@@ -254,56 +254,56 @@
                 <div class="col-md-9 spldishes-grids">
                     <!-- Owl-Carousel -->
                     <div id="owl-demo" class="owl-carousel text-center agileinfo-gallery-row">
-                        <a runat="server" href="~/Products" class="item g1">
+                        <a runat="server" href="~/Category/S1" class="item g1">
                             <img class="lazyOwl" src="../../Content/images/g1.jpg" title="Our latest gallery" alt="" />
                             <div class="agile-dish-caption">
                                 <h4>Duis congue</h4>
                                 <span>Neque porro quisquam est qui dolorem </span>
                             </div>
                         </a>
-                        <a runat="server" href="~/Products" class="item g1">
+                        <a runat="server" href="~/Category/S2" class="item g1">
                             <img class="lazyOwl" src="../../Content/images/g2.jpg" title="Our latest gallery" alt="" />
                             <div class="agile-dish-caption">
                                 <h4>Duis congue</h4>
                                 <span>Neque porro quisquam est qui dolorem </span>
                             </div>
                         </a>
-                        <a runat="server" href="~/Products" class="item g1">
+                        <a runat="server" href="~/Category/S3" class="item g1">
                             <img class="lazyOwl" src="../../Content/images/g3.jpg" title="Our latest gallery" alt="" />
                             <div class="agile-dish-caption">
                                 <h4>Duis congue</h4>
                                 <span>Neque porro quisquam est qui dolorem </span>
                             </div>
                         </a>
-                        <a runat="server" href="~/Products" class="item g1">
+                        <a runat="server" href="~/Category/S4" class="item g1">
                             <img class="lazyOwl" src="../../Content/images/g4.jpg" title="Our latest gallery" alt="" />
                             <div class="agile-dish-caption">
                                 <h4>Duis congue</h4>
                                 <span>Neque porro quisquam est qui dolorem </span>
                             </div>
                         </a>
-                        <a runat="server" href="~/Products" class="item g1">
+                        <a runat="server" href="~/~/Category/S5" class="item g1">
                             <img class="lazyOwl" src="../../Content/images/g5.jpg" alt="" />
                             <div class="agile-dish-caption">
                                 <h4>Duis congue</h4>
                                 <span>Neque porro quisquam est qui dolorem </span>
                             </div>
                         </a>
-                        <a runat="server" href="~/Products" class="item g1">
+                        <a runat="server" href="~/Category/S6" class="item g1">
                             <img class="lazyOwl" src="../../Content/images/g1.jpg" title="Our latest gallery" alt="" />
                             <div class="agile-dish-caption">
                                 <h4>Duis congue</h4>
                                 <span>Neque porro quisquam est qui dolorem </span>
                             </div>
                         </a>
-                        <a runat="server" href="~/Products" class="item g1">
+                        <a runat="server" href="~/Category/S7" class="item g1">
                             <img class="lazyOwl" src="../../Content/images/g2.jpg" title="Our latest gallery" alt="" />
                             <div class="agile-dish-caption">
                                 <h4>Duis congue</h4>
                                 <span>Neque porro quisquam est qui dolorem </span>
                             </div>
                         </a>
-                        <a runat="server" href="~/Products" class="item g1">
+                        <a runat="server" href="~/Category/S8" class="item g1">
                             <img class="lazyOwl" src="../../Content/images/g3.jpg" title="Our latest gallery" alt="" />
                             <div class="agile-dish-caption">
                                 <h4>Duis congue</h4>

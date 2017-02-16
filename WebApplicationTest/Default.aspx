@@ -146,56 +146,56 @@
                 <div class="col-md-9 spldishes-grids">
                     <!-- Owl-Carousel -->
                     <div id="owl-demo" class="owl-carousel text-center agileinfo-gallery-row">
-                        <a runat="server" href="~/Products" class="item g1">
+                        <a runat="server" href="~/Category/S1" class="item g1">
                             <img class="lazyOwl" src="../../Content/images/g1.jpg" title="Our latest gallery" alt="" />
                             <div class="agile-dish-caption">
                                 <h4>Duis congue</h4>
                                 <span>Neque porro quisquam est qui dolorem </span>
                             </div>
                         </a>
-                        <a runat="server" href="~/Products" class="item g1">
+                        <a runat="server" href="~/Category/S2" class="item g1">
                             <img class="lazyOwl" src="../../Content/images/g2.jpg" title="Our latest gallery" alt="" />
                             <div class="agile-dish-caption">
                                 <h4>Duis congue</h4>
                                 <span>Neque porro quisquam est qui dolorem </span>
                             </div>
                         </a>
-                        <a runat="server" href="~/Products" class="item g1">
+                        <a runat="server" href="~/Category/S3" class="item g1">
                             <img class="lazyOwl" src="../../Content/images/g3.jpg" title="Our latest gallery" alt="" />
                             <div class="agile-dish-caption">
                                 <h4>Duis congue</h4>
                                 <span>Neque porro quisquam est qui dolorem </span>
                             </div>
                         </a>
-                        <a runat="server" href="~/Products" class="item g1">
+                        <a runat="server" href="~/Category/S4" class="item g1">
                             <img class="lazyOwl" src="../../Content/images/g4.jpg" title="Our latest gallery" alt="" />
                             <div class="agile-dish-caption">
                                 <h4>Duis congue</h4>
                                 <span>Neque porro quisquam est qui dolorem </span>
                             </div>
                         </a>
-                        <a runat="server" href="~/Products" class="item g1">
+                        <a runat="server" href="~/Category/S5" class="item g1">
                             <img class="lazyOwl" src="../../Content/images/g5.jpg" alt="" />
                             <div class="agile-dish-caption">
                                 <h4>Duis congue</h4>
                                 <span>Neque porro quisquam est qui dolorem </span>
                             </div>
                         </a>
-                        <a runat="server" href="~/Products" class="item g1">
+                        <a runat="server" href="~/Category/S6" class="item g1">
                             <img class="lazyOwl" src="../../Content/images/g1.jpg" title="Our latest gallery" alt="" />
                             <div class="agile-dish-caption">
                                 <h4>Duis congue</h4>
                                 <span>Neque porro quisquam est qui dolorem </span>
                             </div>
                         </a>
-                        <a runat="server" href="~/Products" class="item g1">
+                        <a runat="server" href="~/Category/S7" class="item g1">
                             <img class="lazyOwl" src="../../Content/images/g2.jpg" title="Our latest gallery" alt="" />
                             <div class="agile-dish-caption">
                                 <h4>Duis congue</h4>
                                 <span>Neque porro quisquam est qui dolorem </span>
                             </div>
                         </a>
-                        <a runat="server" href="~/Products" class="item g1">
+                        <a runat="server" href="~/Category/S8" class="item g1">
                             <img class="lazyOwl" src="../../Content/images/g3.jpg" title="Our latest gallery" alt="" />
                             <div class="agile-dish-caption">
                                 <h4>Duis congue</h4>
