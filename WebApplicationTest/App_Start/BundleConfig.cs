@@ -73,15 +73,15 @@ namespace WebApplicationTest
 
 
             ///////////Temp/////////////////
-            bundles.Add(new ScriptBundle("~/bundles/temp").Include(
-                    "~/Scripts/Temp/demo-1.js",
-                    "~/Scripts/Temp/dscountdown.min.js",
-                    "~/Scripts/Temp/jquery-2.1.4.min.js",
-                    "~/Scripts/Temp/particles.min.js"));
+            bundles.Add(new ScriptBundle("~/bundles/capjs").Include(
+                    "~/Scripts/demo-1.js",
+                    "~/Scripts/dscountdown.min.js",
+                    "~/Scripts/jquery-2.1.4.min.js",
+                    "~/Scripts/particles.min.js"));
 
-            bundles.Add(new StyleBundle("~/Content/temp").Include(
-               "~/Content/Temp/dscountdown.css",
-               "~/Content/Temp/style.css"));
+            bundles.Add(new StyleBundle("~/Content/capcss").Include(
+               "~/Content/dscountdown.css",
+               "~/Content/style1.css"));
 
             ////////////////////////////////////
 

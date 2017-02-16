@@ -7,12 +7,13 @@ using System.Web.UI.WebControls;
 
 namespace WebApplicationTest
 {
-    public partial class TempPage : System.Web.UI.Page
+    public partial class _Default : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
+
         private void Page_Error(object sender, EventArgs e)
         {
             // Get last error from the server.
