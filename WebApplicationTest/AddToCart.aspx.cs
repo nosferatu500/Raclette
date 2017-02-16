@@ -28,7 +28,7 @@ namespace WebApplicationTest
                 Debug.Fail("ERROR : We should never get to AddToCart.aspx without a ProductId.");
                 throw new Exception("ERROR : It is illegal to load AddToCart.aspx without setting a ProductId.");
             }
-            Response.Redirect("ShoppingCart.aspx");
+            Response.Redirect("~/Products.aspx");
         }
     }
 }
