@@ -182,15 +182,15 @@
                 <div class="related-row">
                     <h4>Related Searches</h4>
                     <ul>
-                        <li><a href="products.html">Salads </a></li>
-                        <li><a href="products.html">Vegetarian</a></li>
-                        <li><a href="products.html">Dinner</a></li>
-                        <li><a href="products.html">Diet Soup</a></li>
-                        <li><a href="products.html">Sweets</a></li>
-                        <li><a href="products.html">Seasonal</a></li>
-                        <li><a href="products.html">Breakfast</a></li>
-                        <li><a href="products.html">Italian Food</a></li>
-                        <li><a href="products.html">Meals</a></li>
+                        <li><a runat="server" href="~/Products">Salads </a></li>
+                        <li><a runat="server" href="~/Products">Vegetarian</a></li>
+                        <li><a runat="server" href="~/Products">Dinner</a></li>
+                        <li><a runat="server" href="~/Products">Diet Soup</a></li>
+                        <li><a runat="server" href="~/Products">Sweets</a></li>
+                        <li><a runat="server" href="~/Products">Seasonal</a></li>
+                        <li><a runat="server" href="~/Products">Breakfast</a></li>
+                        <li><a runat="server" href="~/Products">Italian Food</a></li>
+                        <li><a runat="server" href="~/Products">Meals</a></li>
                     </ul>
                 </div>
                 <div class="related-row">

@@ -18,40 +18,40 @@
 			<p class="w3lsorder-text">Here your Raclette Food Varieties</p>
 			<div class="menu-agileinfo">  
 				<div class="col-md-4 col-sm-4 col-xs-6 menu-w3lsgrids"> 
-					<a href="products.html"> Breakfast</a>
+					<a runat="server" href="~/Products"> Breakfast</a>
 				</div> 
 				<div class="col-md-4 col-sm-4 col-xs-6 menu-w3lsgrids"> 
-					<a href="products.html"> Salads</a>
+					<a runat="server" href="~/Products"> Salads</a>
 				</div> 
 				<div class="col-md-4 col-sm-4 col-xs-6 menu-w3lsgrids"> 
-					<a href="products.html"> Hot Food</a>
+					<a runat="server" href="~/Products"> Hot Food</a>
 				</div> 
 				<div class="col-md-4 col-sm-4 col-xs-6 menu-w3lsgrids"> 
-					<a href="products.html"> Breads</a>
+					<a runat="server" href="~/Products"> Breads</a>
 				</div> 
 				<div class="col-md-4 col-sm-4 col-xs-6 menu-w3lsgrids"> 
-					<a href="products.html"> Deli Pots & Little Pots</a>
+					<a runat="server" href="~/Products"> Deli Pots & Little Pots</a>
 				</div> 
 				<div class="col-md-4 col-sm-4 col-xs-6 menu-w3lsgrids"> 
-					<a href="products.html"> Snacks & Treats</a>
+					<a runat="server" href="~/Products"> Snacks & Treats</a>
 				</div> 
 				<div class="col-md-4 col-sm-4 col-xs-6 menu-w3lsgrids"> 
-					<a href="products.html"> Drinks</a>
+					<a runat="server" href="~/Products"> Drinks</a>
 				</div> 
 				<div class="col-md-4 col-sm-4 col-xs-6 menu-w3lsgrids"> 
-					<a href="products.html"> South Indian</a>
+					<a runat="server" href="~/Products"> South Indian</a>
 				</div> 
 				<div class="col-md-4 col-sm-4 col-xs-6 menu-w3lsgrids"> 
-					<a href="products.html"> Catering</a>
+					<a runat="server" href="~/Products"> Catering</a>
 				</div> 
 				<div class="col-md-4 col-sm-4 col-xs-6 menu-w3lsgrids"> 
-					<a href="products.html"> Soups</a>
+					<a runat="server" href="~/Products"> Soups</a>
 				</div> 
 				<div class="col-md-4 col-sm-4 col-xs-6 menu-w3lsgrids"> 
-					<a href="products.html"> Lunchbox</a>
+					<a runat="server" href="~/Products"> Lunchbox</a>
 				</div> 
 				<div class="col-md-4 col-sm-4 col-xs-6 menu-w3lsgrids"> 
-					<a href="products.html"> Dinner</a>
+					<a runat="server" href="~/Products"> Dinner</a>
 				</div> 
 				<div class="clearfix"> </div> 
 			</div> 
@@ -60,28 +60,28 @@
 				<p class="w3lsorder-text">Here your Raclette Food Varieties</p>
 				<div class="menu-agileinfo">  
 					<div class="col-md-4 col-sm-4 col-xs-6 menu-w3lsgrids"> 
-						<a href="products.html">Fondue Savoyarde</a>
+						<a runat="server" href="~/Products">Fondue Savoyarde</a>
 					</div> 
 					<div class="col-md-4 col-sm-4 col-xs-6 menu-w3lsgrids"> 
-						<a href="products.html">Garbure</a>
+						<a runat="server" href="~/Products">Garbure</a>
 					</div> 
 					<div class="col-md-4 col-sm-4 col-xs-6 menu-w3lsgrids"> 
-						<a href="products.html">Poulet</a>
+						<a runat="server" href="~/Products">Poulet</a>
 					</div> 
 					<div class="col-md-4 col-sm-4 col-xs-6 menu-w3lsgrids"> 
-						<a href="products.html">Cherry Clafouti</a>
+						<a runat="server" href="~/Products">Cherry Clafouti</a>
 					</div> 
 					<div class="col-md-4 col-sm-4 col-xs-6 menu-w3lsgrids"> 
-						<a href="products.html"> Spinach Soufflé</a>
+						<a runat="server" href="~/Products"> Spinach Soufflé</a>
 					</div> 
 					<div class="col-md-4 col-sm-4 col-xs-6 menu-w3lsgrids"> 
-						<a href="products.html">Baeckeoffe</a>
+						<a runat="server" href="~/Products">Baeckeoffe</a>
 					</div> 
 					<div class="col-md-4 col-sm-4 col-xs-6 menu-w3lsgrids"> 
-						<a href="products.html">Ratatouille</a>
+						<a runat="server" href="~/Products">Ratatouille</a>
 					</div> 
 					<div class="col-md-4 col-sm-4 col-xs-6 menu-w3lsgrids"> 
-						<a href="products.html">Piperade</a>
+						<a runat="server" href="~/Products">Piperade</a>
 					</div>  
 					<div class="clearfix"> </div> 
 				</div> 
@@ -95,14 +95,14 @@
 			<h3 class="w3ls-title w3ls-title1">Today's Offers</h3>
 			<div class="add-products-row">
 				<div class="w3ls-add-grids">
-					<a href="products.html"> 
+					<a runat="server" href="~/Products"> 
 						<h4>Get <span>10%<br>Cashback</span></h4>
 						<h5>Special Offer Today Only</h5>
 						<h6>Order Now <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></h6>
 					</a>
 				</div>
 				<div class="w3ls-add-grids w3ls-add-grids-right">
-					<a href="products.html"> 
+					<a runat="server" href="~/Products"> 
 						<h4>GET Upto<span><br>5% Offer</span></h4>
 						<h5>On Order Lunch Today</h5>
 						<h6>Order Now <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></h6>
