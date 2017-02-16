@@ -8,8 +8,8 @@ using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
+using NewWebApplication.Models;
 using WebApplicationTest.Logic;
-using WebApplicationTest.Models;
 
 namespace WebApplicationTest
 {

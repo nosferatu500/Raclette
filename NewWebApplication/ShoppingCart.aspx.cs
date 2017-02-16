@@ -5,8 +5,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using NewWebApplication.Models;
 using WebApplicationTest.Logic;
-using WebApplicationTest.Models;
 
 namespace WebApplicationTest
 {

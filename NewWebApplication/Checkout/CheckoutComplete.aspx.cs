@@ -4,8 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using NewWebApplication.Models;
 using WebApplicationTest.Logic;
-using WebApplicationTest.Models;
 
 namespace WebApplicationTest.Checkout
 {
@@ -41,7 +41,7 @@ namespace WebApplicationTest.Checkout
                 {
                     // Retrieve PayPal confirmation value.
                     string PaymentConfirmation = decoder["PAYMENTINFO_0_TRANSACTIONID"].ToString();
-                    TransactionId.Text = PaymentConfirmation;
+                    //TransactionId.Text = PaymentConfirmation;
 
                     ProductContext _db = new ProductContext();
                     // Get the current order id.

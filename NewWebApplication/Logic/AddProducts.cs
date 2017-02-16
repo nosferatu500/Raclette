@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using WebApplicationTest.Models;
+using NewWebApplication.Models;
 
 namespace WebApplicationTest.Logic
 {

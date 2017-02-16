@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
-using WebApplicationTest.Models;
+using NewWebApplication.Models;
 
 namespace WebApplicationTest.Logic
 {
@@ -13,7 +13,7 @@ namespace WebApplicationTest.Logic
         internal void AddUserAndRole()
         {
             // Access the application context and create result variables.
-            Models.ApplicationDbContext context = new ApplicationDbContext();
+            ApplicationDbContext context = new ApplicationDbContext();
             IdentityResult IdRoleResult;
             IdentityResult IdUserResult;
 

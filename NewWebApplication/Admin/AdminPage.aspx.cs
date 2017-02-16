@@ -4,8 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using NewWebApplication.Models;
 using WebApplicationTest.Logic;
-using WebApplicationTest.Models;
 
 namespace WebApplicationTest.Admin
 {
@@ -16,12 +16,12 @@ namespace WebApplicationTest.Admin
             string productAction = Request.QueryString["ProductAction"];
             if (productAction == "add")
             {
-                LabelAddStatus.Text = "Product added!";
+      //          LabelAddStatus.Text = "Product added!";
             }
 
             if (productAction == "remove")
             {
-                LabelRemoveStatus.Text = "Product removed!";
+       //         LabelRemoveStatus.Text = "Product removed!";
             }
         }
 
@@ -29,7 +29,7 @@ namespace WebApplicationTest.Admin
         {
             Boolean fileOK = false;
             String path = Server.MapPath("~/Catalog/Images/");
-            if (ProductImage.HasFile)
+       /*     if (ProductImage.HasFile)
             {
                 String fileExtension = System.IO.Path.GetExtension(ProductImage.FileName).ToLower();
                 String[] allowedExtensions = { ".gif", ".png", ".jpeg", ".jpg" };
@@ -40,9 +40,9 @@ namespace WebApplicationTest.Admin
                         fileOK = true;
                     }
                 }
-            }
+            }*/
 
-            if (fileOK)
+      /*      if (fileOK)
             {
                 try
                 {
@@ -74,7 +74,7 @@ namespace WebApplicationTest.Admin
             else
             {
                 LabelAddStatus.Text = "Unable to accept file type.";
-            }
+            }*/
         }
 
         public IQueryable GetCategories()
@@ -95,7 +95,7 @@ namespace WebApplicationTest.Admin
         {
             using (var _db = new ProductContext())
             {
-                int productId = Convert.ToInt16(DropDownRemoveProduct.SelectedValue);
+           /*     int productId = Convert.ToInt16(DropDownRemoveProduct.SelectedValue);
                 var myItem = (from c in _db.Products where c.ProductID == productId select c).FirstOrDefault();
                 if (myItem != null)
                 {
@@ -109,7 +109,7 @@ namespace WebApplicationTest.Admin
                 else
                 {
                     LabelRemoveStatus.Text = "Unable to locate product.";
-                }
+                }*/
             }
         }
     }

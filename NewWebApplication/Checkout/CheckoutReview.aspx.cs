@@ -4,8 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using NewWebApplication.Models;
 using WebApplicationTest.Logic;
-using WebApplicationTest.Models;
 
 namespace WebApplicationTest.Checkout
 {
@@ -93,12 +93,12 @@ namespace WebApplicationTest.Checkout
                         // Display Order information.
                         List<Order> orderList = new List<Order>();
                         orderList.Add(myOrder);
-                        ShipInfo.DataSource = orderList;
+                        /*ShipInfo.DataSource = orderList;
                         ShipInfo.DataBind();
 
                         // Display OrderDetails.
                         OrderItemList.DataSource = myOrderList;
-                        OrderItemList.DataBind();
+                        OrderItemList.DataBind();*/
                     }
                 }
                 else
