@@ -183,12 +183,6 @@ namespace NewWebApplication.Controllers
             return View(model);
         }
 
-        [AllowAnonymous]
-        public ActionResult Admin()
-        {
-            return View();
-        }
-
         //
         // GET: /Account/ConfirmEmail
         [AllowAnonymous]
