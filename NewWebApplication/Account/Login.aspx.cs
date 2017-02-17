@@ -5,7 +5,6 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using NewWebApplication;
 using Owin;
-using WebApplicationTest.Logic;
 
 namespace WebApplicationTest.Account
 {

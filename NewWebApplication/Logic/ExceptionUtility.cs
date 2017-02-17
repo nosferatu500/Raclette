@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Web;
 
-namespace WebApplicationTest.Logic
+namespace NewWebApplication.Logic
 {
     public sealed class ExceptionUtility
     {

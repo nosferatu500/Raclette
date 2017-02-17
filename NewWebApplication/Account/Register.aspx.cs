@@ -5,9 +5,9 @@ using System.Web.UI;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using NewWebApplication;
+using NewWebApplication.Logic;
 using NewWebApplication.Models;
 using Owin;
-using WebApplicationTest.Logic;
 
 namespace WebApplicationTest.Account
 {

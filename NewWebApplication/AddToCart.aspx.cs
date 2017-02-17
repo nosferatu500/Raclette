@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using WebApplicationTest.Logic;
+using NewWebApplication.Logic;
 
 namespace WebApplicationTest
 {

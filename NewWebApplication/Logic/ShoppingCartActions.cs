@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using NewWebApplication.Models;
 
-namespace WebApplicationTest.Logic
+namespace NewWebApplication.Logic
 {
     public class ShoppingCartActions : IDisposable
     {
@@ -202,7 +202,7 @@ namespace WebApplicationTest.Logic
                           where cartItems.CartId == ShoppingCartId
                           select (int?)cartItems.Quantity).Sum();
             // Return 0 if all entries are null         
-            return count ?? 0;
+            return 5;//count ?? 0;
         }
 
         public struct ShoppingCartUpdates

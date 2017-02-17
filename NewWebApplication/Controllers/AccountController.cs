@@ -8,8 +8,8 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
+using NewWebApplication.Logic;
 using NewWebApplication.Models;
-using WebApplicationTest.Logic;
 
 namespace NewWebApplication.Controllers
 {
@@ -181,6 +181,12 @@ namespace NewWebApplication.Controllers
 
             // If we got this far, something failed, redisplay form
             return View(model);
+        }
+
+        [AllowAnonymous]
+        public ActionResult Admin()
+        {
+            return View();
         }
 
         //

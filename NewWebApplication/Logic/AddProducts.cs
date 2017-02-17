@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using NewWebApplication.Models;
 
-namespace WebApplicationTest.Logic
+namespace NewWebApplication.Logic
 {
     public class AddProducts
     {
