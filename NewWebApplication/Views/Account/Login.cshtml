@@ -3,61 +3,16 @@
 @{
     ViewBag.Title = "Log in";
 }
-
-<h2>@ViewBag.Title.</h2>
-<div class="row">
-    <div class="col-md-8">
-        <section id="loginForm">
-            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
-            {
-                @Html.AntiForgeryToken()
-                <h4>Use a local account to log in.</h4>
-                <hr />
-                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-                <div class="form-group">
-                    @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
-                    <div class="col-md-10">
-                        @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
-                    </div>
-                </div>
-                <div class="form-group">
-                    @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
-                    <div class="col-md-10">
-                        @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-offset-2 col-md-10">
-                        <div class="checkbox">
-                            @Html.CheckBoxFor(m => m.RememberMe)
-                            @Html.LabelFor(m => m.RememberMe)
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-offset-2 col-md-10">
-                        <input type="submit" value="Log in" class="btn btn-default" />
-                    </div>
-                </div>
-                <p>
-                    @Html.ActionLink("Register as a new user", "Register")
-                </p>
-                @* Enable this once you have account confirmation enabled for password reset functionality
-                    <p>
-                        @Html.ActionLink("Forgot your password?", "ForgotPassword")
-                    </p>*@
-            }
-        </section>
+<!--TODO: Re-Design External Button-->
+@*
+    <div class="row">
+        <div class="col-md-4">
+            <section id="socialLoginForm">
+                @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
+            </section>
+        </div>
     </div>
-    <div class="col-md-4">
-        <section id="socialLoginForm">
-            @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
-        </section>
-    </div>
-</div>
-
+*@
 <div class="banner">
     <div class="banner-text">
         <div class="container">
@@ -76,37 +31,36 @@
     <div class="container">
         <h3 class="w3ls-title w3ls-title1">Login to your account</h3>
         <div class="login-agileinfo">
-            <form action="#" method="post">
-                @Html.TextBoxFor(m => m.Email, new { @class = "agile-ltext", placeholder = "Email", required = "", TextMode = "Email" })
-                @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger", ErrorMessage = "The email field is required." })
+            @using (Html.BeginForm("Login", "Account", new {ReturnUrl = ViewBag.ReturnUrl}, FormMethod.Post, new {@class = "form-horizontal", role = "form"}))
+            {
 
-                <asp:TextBox runat="server" ID="Password" TextMode="Password" class="agile-ltext" placeholder="Password" required=""/>
-                <asp:RequiredFieldValidator runat="server" ControlToValidate="Password" CssClass="text-danger" ErrorMessage="The password field is required."/>
+                @Html.AntiForgeryToken()
 
+                @Html.ValidationSummary(true, "", new {@class = "text-danger"})
+
+                @Html.TextBoxFor(m => m.Email, new {@class = "agile-ltext", placeholder = "Email", required = "", TextMode = "Email"})
+                @Html.ValidationMessageFor(m => m.Email, "", new {@class = "text-danger", ErrorMessage = "The email field is required."})
+
+                @Html.PasswordFor(m => m.Password, new {@class = "agile-ltext", placeholder = "Password", TextMode = "Password", required = ""})
+                @Html.ValidationMessageFor(m => m.Password, "", new {@class = "text-danger", ErrorMessage = "The password field is required."})
                 <div class="wthreelogin-text">
                     <ul>
                         <li>
-                            <asp:CheckBox runat="server" ID="RememberMe"/>
-                            <asp:Label runat="server" AssociatedControlID="RememberMe">Remember me?</asp:Label>
-                            <!--TODO: Fix check box-->
-                            <!-- <label class="checkbox"><input type="checkbox" ID="RememberMe1" name="checkbox"><i></i>
-                                <span> Remember me ?</span>
-                            </label>
-                            -->
+                            <a>@Html.CheckBoxFor(m => m.RememberMe) <span> Remember me ?</span></a>
                         </li>
                         <li>
                             <a>
-                                <asp:HyperLink runat="server" ID="ForgotPasswordHyperLink" ViewStateMode="Disabled">Forgot password?</asp:HyperLink>
+                                @Html.ActionLink("Forgot password?", "ForgotPassword")
                             </a>
                         </li>
                     </ul>
                     <div class="clearfix"></div>
                 </div>
-                <asp:Button runat="server" OnClick="LogIn" Text="LOGIN"/>
-            </form>
+                <input type="submit" value="LOGIN"/>
+            }
             <p>
                 Don't have an Account? <a>
-                    <asp:HyperLink runat="server" ID="RegisterHyperLink" ViewStateMode="Disabled">Sign Up Now!</asp:HyperLink>
+                    @Html.ActionLink("Sign Up Now!", "Register")
                 </a>
             </p>
         </div>

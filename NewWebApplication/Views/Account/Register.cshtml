@@ -3,38 +3,56 @@
     ViewBag.Title = "Register";
 }
 
-<h2>@ViewBag.Title.</h2>
 
-@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
-{
-    @Html.AntiForgeryToken()
-    <h4>Create a new account.</h4>
-    <hr />
-    @Html.ValidationSummary("", new { @class = "text-danger" })
-    <div class="form-group">
-        @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+<div class="banner">
+    <div class="banner-text">
+        <div class="container">
+            <h2>
+                Delicious food from the
+                <br>
+                <span>Best Chefs For you.</span>
+            </h2>
         </div>
     </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+</div>
+
+<div class="login-page about">
+    <img class="login-w3img" src="../../Content/images/img3.jpg" alt="">
+    <div class="container">
+        <h3 class="w3ls-title w3ls-title1">Sign Up to your account</h3>
+        <div class="login-agileinfo">
+            @using (Html.BeginForm("Register", "Account", FormMethod.Post, new {@class = "form-horizontal", role = "form"}))
+            {
+
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary("", new {@class = "text-danger"})
+
+                @Html.TextBoxFor(m => m.Username, new {@class = "agile-ltext", placeholder = "Username", required = "", TextMode = "Email"})
+                @Html.ValidationMessageFor(m => m.Email, "", new {@class = "text-danger", ErrorMessage = "The username field is required."})
+
+                @Html.TextBoxFor(m => m.Email, new {@class = "agile-ltext", placeholder = "Email", required = "", TextMode = "Email"})
+                @Html.ValidationMessageFor(m => m.Email, "", new {@class = "text-danger", ErrorMessage = "The email field is required."})
+
+                @Html.PasswordFor(m => m.Password, new {@class = "agile-ltext", placeholder = "Password", TextMode = "Password", required = ""})
+                @Html.ValidationMessageFor(m => m.Password, "", new {@class = "text-danger", ErrorMessage = "The password field is required."})
+
+                @Html.PasswordFor(m => m.ConfirmPassword, new {@class = "agile-ltext", placeholder = "Confirm Password", TextMode = "Password", required = ""})
+                @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new {@class = "text-danger", ErrorMessage = "The confirm password field is required."})
+
+                <div class="wthreelogin-text">
+                    <ul>
+                        <li>
+                            <a>@Html.CheckBoxFor(m => m.Agree) <span> I agree to the terms of service</span></a>
+                        </li>
+                    </ul>
+                    <div class="clearfix"> </div>
+                </div>
+                <input type="submit" value="Sign Up" />
+            }
+            <p>Already have an account?  <a> @Html.ActionLink("Login Now!", "Login") </a></p>
         </div>
     </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
-        </div>
-    </div>
-    <div class="form-group">
-        <div class="col-md-offset-2 col-md-10">
-            <input type="submit" class="btn btn-default" value="Register" />
-        </div>
-    </div>
-}
+</div>
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")

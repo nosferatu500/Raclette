@@ -184,14 +184,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Account\Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\Register.aspx.cs">
-      <DependentUpon>Register.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
     <Compile Include="AddToCart.aspx.cs">
       <DependentUpon>AddToCart.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -356,8 +348,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Account\Login.aspx" />
-    <Content Include="Account\Register.aspx" />
     <Content Include="AddToCart.aspx" />
     <Content Include="Admin\AdminPage.aspx" />
     <Content Include="App_Readme\Elmah.txt" />
@@ -414,7 +404,6 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Account\Web.config" />
     <Content Include="Admin\Web.config" />
     <Content Include="Checkout\Web.config" />
     <Content Include="fonts\FontAwesome.otf" />
