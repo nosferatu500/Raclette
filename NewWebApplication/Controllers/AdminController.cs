@@ -11,7 +11,7 @@ namespace NewWebApplication.Controllers
         // GET: Admin
         public ActionResult Index()
         {
-            return View();
+            return View("Index");
         }
 
         // GET: Admin/Details/5
