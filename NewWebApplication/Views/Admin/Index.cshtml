@@ -1,85 +1,106 @@
 ﻿@using NewWebApplication.Models
-
+@model AdminProductModel
 @{
     ViewBag.Title = "Index";
 }
-
+@*BUG: Fix bug when open admin page from main page *@
+@*BUG: crazy work actions *@
 <h1>Administration</h1>
 <hr />
 <h3>Add Product:</h3>
 <table>
+    @using (Html.BeginForm("AddProduct", "Admin",  FormMethod.Post, new {@class = "form-horizontal", role = "form"}))
+    {
+        <tr>
+            <td>@Html.Label("Category:")</td>
+            <td>
+                @{
+                    var listItems = new List<SelectListItem>();
+
+                    using (var _db = new ProductContext())
+                    {
+                        var query = _db.Categories;
+
+                        foreach (var item in query)
+                        {
+                            listItems.Add(new SelectListItem
+                            {
+
+                                Text = item.CategoryName,
+                                Value = item.CategoryID.ToString()
+                            });
+                        }
+                    }
+
+                }
+                @Html.DropDownListFor(m => m.Categories, listItems, new {@class = "form-control"})
+
+            </td>
+        </tr>
+        <tr>
+            <td>@Html.Label("Name:")</td>
+            <td>
+                @Html.TextBoxFor(m => m.Name, new {placeholder = "Product Name", required = ""})
+            </td>
+        </tr>
+        <tr>
+            <td>@Html.Label("Description:")</td>
+            <td>
+                @Html.TextBoxFor(m => m.Description, new {placeholder = "Product Description", required = ""})
+            </td>
+        </tr>
+        <tr>
+            <td>@Html.Label("Price:")</td>
+            <td>
+                @Html.TextBoxFor(m => m.Description, new { placeholder = "Product Price", required = "" })
+            </td>
+        </tr>
+        <tr>
+            @using (Html.BeginForm("UploadImage", "Admin", FormMethod.Post, new {enctype = "multipart/form-data"}))
+            {
+                <td>@Html.Label("Image File:")</td>
+                <td>
+                    <input type="file" name="NewFile" id="ProductImage"/>
+                    <input type="submit" value="Upload Image"/>
+                </td>
+            }
+        </tr>
+    }
+</table>
+<p></p>
+<p></p>
+<input type="submit" value="Add Product" />
+<asp:Label ID="LabelAddStatus" runat="server" Text=""></asp:Label>
+<p></p>
+<h3>Remove Product:</h3>
+<table>
     <tr>
-        <td>@Html.Label("Category:")</td>
+        <td>@Html.Label("Product:")</td>
         <td>
             @{
-                var listItems = new List<SelectListItem>();
+                var listProducts = new List<SelectListItem>();
 
                 using (var _db = new ProductContext())
                 {
-                    var query = _db.Categories;
+                    var query = _db.Products;
 
                     foreach (var item in query)
                     {
-                        listItems.Add(new SelectListItem
+                        listProducts.Add(new SelectListItem
                         {
 
-                            Text = item.CategoryName,
+                            Text = item.ProductName,
                             Value = item.CategoryID.ToString()
                         });
                     }
                 }
 
             }
-            @Html.DropDownList("", listItems, new { @class = "form-control" })
-            
-        </td>
-    </tr>
-    <tr>
-        <td>@Html.Label("Name:")</td>
-        <td>
-            @Html.TextBox("", new { placeholder = "Product Name", required = ""})
-        </td>
-    </tr>
-    <tr>
-        <td>@Html.Label("Description:")</td>
-        <td>
-            @Html.TextBox("", new { placeholder = "Product Description", required = "" })
-        </td>
-    </tr>
-    <tr>
-        <td><asp:Label ID="LabelAddPrice" runat="server">Price:</asp:Label></td>
-        <td>
-            <asp:TextBox ID="AddProductPrice" runat="server"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" Text="* Price required." ControlToValidate="AddProductPrice" SetFocusOnError="true" Display="Dynamic"></asp:RequiredFieldValidator>
-            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" Text="* Must be a valid price without $." ControlToValidate="AddProductPrice" SetFocusOnError="True" Display="Dynamic" ValidationExpression="^[0-9]*(\.)?[0-9]?[0-9]?$"></asp:RegularExpressionValidator>
-        </td>
-    </tr>
-    <tr>
-        <td><asp:Label ID="LabelAddImageFile" runat="server">Image File:</asp:Label></td>
-        <td>
-            <asp:FileUpload ID="ProductImage" runat="server" />
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" Text="* Image path required." ControlToValidate="ProductImage" SetFocusOnError="true" Display="Dynamic"></asp:RequiredFieldValidator>
+            @Html.DropDownListFor(m => m.Products, listProducts, new { @class = "form-control" })
         </td>
     </tr>
 </table>
 <p></p>
-<p></p>
-<asp:Button ID="AddProductButton" runat="server" Text="Add Product" OnClick="AddProductButton_Click" CausesValidation="true" />
-<asp:Label ID="LabelAddStatus" runat="server" Text=""></asp:Label>
-<p></p>
-<h3>Remove Product:</h3>
-<table>
-    <tr>
-        <td><asp:Label ID="LabelRemoveProduct" runat="server">Product:</asp:Label></td>
-        <td>
-            <asp:DropDownList ID="DropDownRemoveProduct" runat="server" ItemType="WebApplicationTest.Models.Product"
-                              SelectMethod="GetProducts" AppendDataBoundItems="true"
-                              DataTextField="ProductName" DataValueField="ProductID">
-            </asp:DropDownList>
-        </td>
-    </tr>
-</table>
-<p></p>
-<asp:Button ID="RemoveProductButton" runat="server" Text="Remove Product" OnClick="RemoveProductButton_Click" CausesValidation="false" />
+<input type="submit" value="Remove Product" />
 <asp:Label ID="LabelRemoveStatus" runat="server" Text=""></asp:Label>
 
