@@ -267,13 +267,6 @@
     <Compile Include="OrderStatus.aspx.designer.cs">
       <DependentUpon>OrderStatus.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Partner.aspx.cs">
-      <DependentUpon>Partner.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Partner.aspx.designer.cs">
-      <DependentUpon>Partner.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Privacy.aspx.cs">
       <DependentUpon>Privacy.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -399,7 +392,6 @@
     <Content Include="Menu.aspx" />
     <Content Include="Offers.aspx" />
     <Content Include="OrderStatus.aspx" />
-    <Content Include="Partner.aspx" />
     <Content Include="Privacy.aspx" />
     <Content Include="ProductDetails.aspx" />
     <Content Include="Products.aspx" />
@@ -460,6 +452,8 @@
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Home\FAQ.cshtml" />
     <Content Include="Views\Home\Careers.cshtml" />
+    <Content Include="Views\Home\Partner.cshtml" />
+    <Content Include="Views\Home\Privacy.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

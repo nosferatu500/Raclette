@@ -39,6 +39,14 @@ namespace NewWebApplication.Controllers
             return View();
         }
 
+        public ActionResult Partner()
+        {
+            return View();
+        }
 
+        public ActionResult Privacy()
+        {
+            return View();
+        }
     }
 }
