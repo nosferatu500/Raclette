@@ -9,7 +9,7 @@
             <td><asp:Label ID="LabelAddCategory" runat="server">Category:</asp:Label></td>
             <td>
                 <asp:DropDownList ID="DropDownAddCategory" runat="server" 
-                    ItemType="WebApplicationTest.Models.Category" 
+                    ItemType="NewWebApplication.Models.Category" 
                     SelectMethod="GetCategories" DataTextField="CategoryName" 
                     DataValueField="CategoryID" >
                 </asp:DropDownList>

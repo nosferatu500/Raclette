@@ -29,10 +29,16 @@ namespace NewWebApplication.Controllers
             return View();
         }
 
-        public void Page_Load(object sender, EventArgs e)
+        public ActionResult FAQ()
         {
-            
+            return View();
         }
-        
+
+        public ActionResult Careers()
+        {
+            return View();
+        }
+
+
     }
 }

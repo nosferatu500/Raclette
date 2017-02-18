@@ -11,7 +11,7 @@ namespace WebApplicationTest.Admin
 {
     public partial class AdminPage : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+       /* protected void Page_Load(object sender, EventArgs e)
         {
             string productAction = Request.QueryString["ProductAction"];
             if (productAction == "add")
@@ -111,6 +111,6 @@ namespace WebApplicationTest.Admin
                     LabelRemoveStatus.Text = "Unable to locate product.";
                 }
             }
-        }
+        }*/
     }
 }
