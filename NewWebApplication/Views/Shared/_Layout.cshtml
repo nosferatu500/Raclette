@@ -47,22 +47,25 @@
                                 <i class="fa fa-phone" aria-hidden="true"></i>Call us: +01 222 33345
                             </li>
                             <li>
-                            @if (!Request.IsAuthenticated)
-                            {
-                                <li class="head-dpdn"><i class="fa fa-user-plus" aria-hidden="true"></i>@Html.ActionLink(" Signup", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
-                                <li class="head-dpdn"><i class="fa fa-sign-in" aria-hidden="true"></i>@Html.ActionLink(" Login", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
-                            }
-                            else
-                            {
-
-                                using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
+                                @if (!Request.IsAuthenticated)
                                 {
-                                    @Html.AntiForgeryToken()
-                                    <li class="head-dpdn">@Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage your account" })</li>
-                                    <li class="head-dpdn"><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
-
+                                    <ul>
+                                        <li class="head-dpdn"><i class="fa fa-user-plus" aria-hidden="true"></i>@Html.ActionLink(" Signup", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+                                        <li class="head-dpdn"><i class="fa fa-sign-in" aria-hidden="true"></i>@Html.ActionLink(" Login", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+                                    </ul>
                                 }
-                            }
+                                else
+                                {
+
+                                    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
+                                    {
+                                        @Html.AntiForgeryToken()
+                                        <ul>
+                                            <li class="head-dpdn">@Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage your account" })</li>
+                                            <li class="head-dpdn"><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
+                                        </ul>
+                                    }
+                                }
                             </li>
                             <li class="head-dpdn">
                                 <a runat="server" href="~/Offers"><i class="fa fa-gift" aria-hidden="true"></i>Offers</a>

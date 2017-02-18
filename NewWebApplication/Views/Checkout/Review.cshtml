@@ -1,0 +1,68 @@
+﻿@using NewWebApplication.Controllers
+@model NewWebApplication.Models.CheckoutModel
+@{
+    ViewBag.Title = "Review";
+}
+
+<h1>Order Review</h1>
+<p></p>
+<h3 style="padding-left: 33px">Products:</h3>
+<table class="table table-bordered" GridLines="Both" Width="500" BorderColor="#efeeef" BorderWidth="33">
+    <thead>
+        <tr>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in @Model.OrderItems)
+        {
+            <tr>
+                <th scope="row">@item.ProductId</th>
+                <td>@item.Product.ProductName</td>
+                <td>@item.Product.UnitPrice</td>
+                <td>@item.Quantity</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<table class="table table-bordered" GridLines="Both" Width="500" BorderColor="#efeeef" BorderWidth="33">
+    <thead>
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>PostalCode</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in @Model.ShipInfo)
+        {
+            <tr>
+                <td>@item.FirstName</td>
+                <td>@item.LastName</td>
+                <td>@item.Address</td>
+                <td>@item.City</td>
+                <td>@item.State</td>
+                <td>@item.PostalCode</td>
+                <td>@item.Total</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<p></p>
+<hr />
+<input type="button" ID="CheckoutConfirm" runat="server" Text="Complete Order" OnClick=@{
+                                                                                            CheckoutController controller = new CheckoutController();
+                                                                                            controller.Confirm();
+                                                                                        } />
+
+
+
