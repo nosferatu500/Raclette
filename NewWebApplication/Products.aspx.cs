@@ -18,7 +18,7 @@ namespace WebApplicationTest
 
         public IQueryable<Product> GetListProducts([QueryString("id")] int? categoryId, [RouteData] string categoryName)
         {
-            var _db = new ProductContext();
+            var _db = new ApplicationDbContext();
             IQueryable<Product> query = _db.Products;
 
             if (categoryId.HasValue && categoryId > 0)

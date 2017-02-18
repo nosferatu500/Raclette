@@ -10,7 +10,7 @@ namespace NewWebApplication.Logic
     {
         public string ShoppingCartId { get; set; }
 
-        private ProductContext _db = new ProductContext();
+        private ApplicationDbContext _db = new ApplicationDbContext();
 
         public const string CartSessionKey = "CartId";
 
@@ -141,7 +141,7 @@ namespace NewWebApplication.Logic
 
         public void RemoveItem(string removeCartID, int removeProductID)
         {
-            using (var _db = new ProductContext())
+            using (var _db = new ApplicationDbContext())
             {
                 try
                 {
@@ -162,7 +162,7 @@ namespace NewWebApplication.Logic
 
         public void UpdateItem(string updateCartID, int updateProductID, int quantity)
         {
-            using (var _db = new ProductContext())
+            using (var _db = new ApplicationDbContext())
             {
                 try
                 {

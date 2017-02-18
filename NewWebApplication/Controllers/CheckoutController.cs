@@ -54,7 +54,7 @@ namespace NewWebApplication.Controllers
                     string PaymentConfirmation = decoder["PAYMENTINFO_0_TRANSACTIONID"].ToString();
                     model.TransactionID = PaymentConfirmation;
 
-                    ProductContext _db = new ProductContext();
+                    var _db = new ApplicationDbContext();
                     // Get the current order id.
                     int currentOrderId = -1;
                     if (Session["currentOrderId"] != string.Empty)
@@ -143,7 +143,7 @@ namespace NewWebApplication.Controllers
                 }
 
                 // Get DB context.
-                ProductContext _db = new ProductContext();
+                var _db = new ApplicationDbContext();
 
                 // Add order to DB.
                 _db.Orders.Add(myOrder);
