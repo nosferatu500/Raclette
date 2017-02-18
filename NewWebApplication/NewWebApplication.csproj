@@ -267,13 +267,6 @@
     <Compile Include="OrderStatus.aspx.designer.cs">
       <DependentUpon>OrderStatus.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Privacy.aspx.cs">
-      <DependentUpon>Privacy.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Privacy.aspx.designer.cs">
-      <DependentUpon>Privacy.aspx</DependentUpon>
-    </Compile>
     <Compile Include="ProductDetails.aspx.cs">
       <DependentUpon>ProductDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -318,13 +311,6 @@
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
-    <Compile Include="Terms.aspx.cs">
-      <DependentUpon>Terms.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Terms.aspx.designer.cs">
-      <DependentUpon>Terms.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="AddToCart.aspx" />
@@ -392,7 +378,6 @@
     <Content Include="Menu.aspx" />
     <Content Include="Offers.aspx" />
     <Content Include="OrderStatus.aspx" />
-    <Content Include="Privacy.aspx" />
     <Content Include="ProductDetails.aspx" />
     <Content Include="Products.aspx" />
     <Content Include="ReturnPolicy.aspx" />
@@ -414,7 +399,6 @@
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="ShoppingCart.aspx" />
-    <Content Include="Terms.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -454,6 +438,7 @@
     <Content Include="Views\Home\Careers.cshtml" />
     <Content Include="Views\Home\Partner.cshtml" />
     <Content Include="Views\Home\Privacy.cshtml" />
+    <Content Include="Views\Home\Terms.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

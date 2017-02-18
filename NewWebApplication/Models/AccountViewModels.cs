@@ -85,6 +85,7 @@ namespace NewWebApplication.Models
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
 
+        [Required]
         [Display(Name = "I agree to the terms of service")]
         public bool Agree { get; set; }
     }

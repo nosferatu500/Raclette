@@ -48,5 +48,10 @@ namespace NewWebApplication.Controllers
         {
             return View();
         }
+
+        public ActionResult Terms()
+        {
+            return View();
+        }
     }
 }
