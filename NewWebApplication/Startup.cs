@@ -1,8 +1,6 @@
-﻿using System.Web.Hosting;
-using DotVVM.Framework;
-using Microsoft.Owin;
+﻿using Microsoft.Owin;
 using Owin;
-using DotVVM.Framework.Configuration;
+using System.Web.Hosting;
 
 [assembly: OwinStartup(typeof(NewWebApplication.Startup))]
 namespace NewWebApplication
@@ -14,7 +12,7 @@ namespace NewWebApplication
             ConfigureAuth(app);
             // initialize DotVVM
             var applicationPhysicalPath = HostingEnvironment.ApplicationPhysicalPath;
-            var dotvvmConfiguration = app.Use<IDotvvmStartup>(applicationPhysicalPath);
+            var dotvvmConfiguration = app.UseDotVVM<DotvvmStartup>(applicationPhysicalPath);
         }
     }
 }

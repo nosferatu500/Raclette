@@ -54,6 +54,9 @@
     <Reference Include="DotVVM.Framework, Version=1.1.0.0, Culture=neutral, PublicKeyToken=23f3607db32275da, processorArchitecture=MSIL">
       <HintPath>..\packages\DotVVM.1.1.0-rc5\lib\net451\DotVVM.Framework.dll</HintPath>
     </Reference>
+    <Reference Include="DotVVM.Framework.Hosting.Owin, Version=1.1.0.0, Culture=neutral, PublicKeyToken=23f3607db32275da, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotVVM.Owin.1.1.0-rc5\lib\net451\DotVVM.Framework.Hosting.Owin.dll</HintPath>
+    </Reference>
     <Reference Include="Elmah, Version=1.2.14706.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\elmah.corelibrary.1.2.2\lib\Elmah.dll</HintPath>
     </Reference>
@@ -240,6 +243,7 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MenuController.cs" />
     <Compile Include="Controllers\ShopController.cs" />
+    <Compile Include="DotvvmStartup.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -265,6 +269,7 @@
     <Compile Include="Models\CartItem.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\CheckoutModel.cs" />
+    <Compile Include="Models\DefaultViewModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Order.cs" />
@@ -457,6 +462,7 @@
     <Content Include="Views\Checkout\Error.cshtml" />
     <Content Include="Views\Checkout\Review.cshtml" />
     <Content Include="Views\Checkout\Start.cshtml" />
+    <Content Include="Views\default.dothtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
