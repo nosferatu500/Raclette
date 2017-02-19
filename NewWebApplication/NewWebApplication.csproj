@@ -277,6 +277,7 @@
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ProductContext.cs" />
     <Compile Include="Models\ProductDatabaseInitializer.cs" />
+    <Compile Include="Models\ShopModel.cs" />
     <Compile Include="Offers.aspx.cs">
       <DependentUpon>Offers.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -463,11 +464,11 @@
     <Content Include="Views\Checkout\Review.cshtml" />
     <Content Include="Views\Checkout\Start.cshtml" />
     <Content Include="Views\default.dothtml" />
+    <Content Include="Views\Shop\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Menu\" />
-    <Folder Include="Views\Shop\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
