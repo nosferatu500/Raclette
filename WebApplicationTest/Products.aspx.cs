@@ -9,14 +9,14 @@ using WebApplicationTest.Models;
 
 namespace WebApplicationTest
 {
-    public partial class ProductList : System.Web.UI.Page
+    public partial class Products : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        public IQueryable<Product> GetProducts([QueryString("id")] int? categoryId, [RouteData] string categoryName)
+        public IQueryable<Product> GetListProducts([QueryString("id")] int? categoryId, [RouteData] string categoryName)
         {
             var _db = new ProductContext();
             IQueryable<Product> query = _db.Products;

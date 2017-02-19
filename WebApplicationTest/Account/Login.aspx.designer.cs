@@ -31,6 +31,15 @@ namespace WebApplicationTest.Account {
         protected global::System.Web.UI.WebControls.Literal FailureText;
         
         /// <summary>
+        /// OpenAuthLogin control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::WebApplicationTest.Account.OpenAuthProviders OpenAuthLogin;
+        
+        /// <summary>
         /// Email control.
         /// </summary>
         /// <remarks>
@@ -58,6 +67,15 @@ namespace WebApplicationTest.Account {
         protected global::System.Web.UI.WebControls.CheckBox RememberMe;
         
         /// <summary>
+        /// ForgotPasswordHyperLink control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink ForgotPasswordHyperLink;
+        
+        /// <summary>
         /// RegisterHyperLink control.
         /// </summary>
         /// <remarks>
@@ -65,14 +83,5 @@ namespace WebApplicationTest.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink RegisterHyperLink;
-        
-        /// <summary>
-        /// OpenAuthLogin control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::WebApplicationTest.Account.OpenAuthProviders OpenAuthLogin;
     }
 }

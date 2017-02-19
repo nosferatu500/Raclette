@@ -65,7 +65,7 @@ public class NVPAPICaller
         encoder["METHOD"] = "SetExpressCheckout";
         encoder["RETURNURL"] = returnURL;
         encoder["CANCELURL"] = cancelURL;
-        encoder["BRANDNAME"] = "Wingtip Toys Sample Application";
+        encoder["BRANDNAME"] = "Raclette Application";
         encoder["PAYMENTREQUEST_0_AMT"] = amt;
         encoder["PAYMENTREQUEST_0_ITEMAMT"] = amt;
         encoder["PAYMENTREQUEST_0_PAYMENTACTION"] = "Sale";

@@ -20,27 +20,27 @@ namespace WebApplicationTest.Models
                 new Category
                 {
                     CategoryID = 1,
-                    CategoryName = "Cars"
+                    CategoryName = "Breakfast"
                 },
                 new Category
                 {
                     CategoryID = 2,
-                    CategoryName = "Planes"
+                    CategoryName = "Salads"
                 },
                 new Category
                 {
                     CategoryID = 3,
-                    CategoryName = "Trucks"
+                    CategoryName = "Hot Food"
                 },
                 new Category
                 {
                     CategoryID = 4,
-                    CategoryName = "Boats"
+                    CategoryName = "Drinks"
                 },
                 new Category
                 {
                     CategoryID = 5,
-                    CategoryName = "Rockets"
+                    CategoryName = "Dinner"
                 },
             };
 

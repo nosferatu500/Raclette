@@ -22,6 +22,8 @@ namespace WebApplicationTest.Models
         [Display(Name = "Price")]
         public double? UnitPrice { get; set; }
 
+        public double? Discount => UnitPrice.Value - UnitPrice.Value / 10;
+
         public long MinorValueAmount
         {
             get

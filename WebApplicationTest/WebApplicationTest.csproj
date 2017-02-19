@@ -533,7 +533,6 @@
     </Compile>
     <Compile Include="ProductList.aspx.cs">
       <DependentUpon>ProductList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ProductList.aspx.designer.cs">
       <DependentUpon>ProductList.aspx</DependentUpon>
