@@ -60,7 +60,7 @@ namespace WebApplicationTest.Checkout
                     }
 
                     // Get DB context.
-                    ProductContext _db = new ProductContext();
+                    var _db = new ApplicationDbContext();
 
                     // Add order to DB.
                     _db.Orders.Add(myOrder);

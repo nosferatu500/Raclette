@@ -17,7 +17,7 @@ namespace WebApplicationTest.Logic
             myProduct.ImagePath = ProductImagePath;
             myProduct.CategoryID = Convert.ToInt32(ProductCategory);
 
-            using (ProductContext _db = new ProductContext())
+            using (var _db = new ApplicationDbContext())
             {
                 // Add product to DB.
                 _db.Products.Add(myProduct);

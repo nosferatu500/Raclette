@@ -51,6 +51,9 @@
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.2-beta2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -103,9 +106,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -196,6 +196,7 @@
     <Content Include="AddToCart.aspx" />
     <Content Include="Admin\AdminPage.aspx" />
     <Content Include="App_Readme\Elmah.txt" />
+    <Content Include="Careers.aspx" />
     <Content Include="Checkout\CheckoutCancel.aspx" />
     <Content Include="Checkout\CheckoutComplete.aspx" />
     <Content Include="Checkout\CheckoutError.aspx" />
@@ -206,6 +207,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\flexslider.css" />
+    <Content Include="Content\font-awesome.css" />
     <Content Include="Content\images\1.jpg" />
     <Content Include="Content\images\1.png" />
     <Content Include="Content\images\10.jpg" />
@@ -256,10 +258,15 @@
     <Content Include="Content\images\si2.jpg" />
     <Content Include="Content\jquery-ui.css" />
     <Content Include="Content\jquery.countdown.css" />
+    <Content Include="Content\owl.carousel.css" />
     <Content Include="Content\style.css" />
+    <Content Include="Content\Temp\dscountdown.css" />
+    <Content Include="Content\Temp\style.css" />
     <Content Include="Default.aspx" />
     <Content Include="ErrorPage.aspx" />
+    <Content Include="FAQ.aspx" />
     <Content Include="favicon.ico" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -271,26 +278,57 @@
     </Content>
     <Content Include="Checkout\Web.config" />
     <Content Include="Admin\Web.config" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Menu.aspx" />
+    <Content Include="Offers.aspx" />
+    <Content Include="OrderStatus.aspx" />
+    <Content Include="Partner.aspx" />
+    <Content Include="Privacy.aspx" />
     <Content Include="ProductDetails.aspx" />
-    <Content Include="ProductList.aspx" />
+    <Content Include="Products.aspx" />
+    <Content Include="ReturnPolicy.aspx" />
+    <Content Include="Returns.aspx" />
     <Content Include="Scripts\bootstrap-3.1.1.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\classie.js" />
+    <Content Include="Scripts\easing.js" />
     <Content Include="Scripts\imagezoom.js" />
-    <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-2.2.3.min.js" />
+    <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.1.1.js" />
+    <Content Include="Scripts\jquery-3.1.1.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
     <Content Include="Scripts\jquery-ui.min.js" />
     <Content Include="Scripts\jquery.countdown.js" />
     <Content Include="Scripts\jquery.flexslider.js" />
+    <Content Include="Scripts\jquery.jscrollpane.min.js" />
     <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\jquery.mousewheel.js" />
     <Content Include="Scripts\jquery.wmuSlider.js" />
+    <Content Include="Scripts\minicart.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\move-top.js" />
+    <Content Include="Scripts\owl.carousel.js" />
     <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.matchmedia.addListener.js" />
+    <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\script.js" />
     <Content Include="Scripts\simpleCart.min.js" />
+    <Content Include="Scripts\SmoothScroll.min.js" />
+    <Content Include="Scripts\Temp\demo-1.js" />
+    <Content Include="Scripts\Temp\dscountdown.min.js" />
+    <Content Include="Scripts\Temp\jquery-2.1.4.min.js" />
+    <Content Include="Scripts\Temp\particles.min.js" />
     <Content Include="Scripts\uisearch.js" />
     <Content Include="Scripts\WebForms\DetailsView.js" />
     <Content Include="Scripts\WebForms\Focus.js" />
@@ -316,6 +354,8 @@
     <Content Include="Scripts\wow.min.js" />
     <Content Include="ShoppingCart.aspx" />
     <Content Include="Site.Master" />
+    <Content Include="TempPage.aspx" />
+    <Content Include="Terms.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -452,6 +492,13 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Careers.aspx.cs">
+      <DependentUpon>Careers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Careers.aspx.designer.cs">
+      <DependentUpon>Careers.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Checkout\CheckoutCancel.aspx.cs">
       <DependentUpon>CheckoutCancel.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -508,6 +555,13 @@
     <Compile Include="ErrorPage.aspx.designer.cs">
       <DependentUpon>ErrorPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FAQ.aspx.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FAQ.aspx.designer.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -516,14 +570,52 @@
     <Compile Include="Logic\PayPalFunctions.cs" />
     <Compile Include="Logic\RoleActions.cs" />
     <Compile Include="Logic\ShoppingCartActions.cs" />
+    <Compile Include="Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702190904388_Initialize.cs" />
+    <Compile Include="Migrations\201702190904388_Initialize.Designer.cs">
+      <DependentUpon>201702190904388_Initialize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CartItem.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\OrderDetail.cs" />
     <Compile Include="Models\Product.cs" />
-    <Compile Include="Models\ProductContext.cs" />
-    <Compile Include="Models\ProductDatabaseInitializer.cs" />
+    <Compile Include="Offers.aspx.cs">
+      <DependentUpon>Offers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Offers.aspx.designer.cs">
+      <DependentUpon>Offers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderStatus.aspx.cs">
+      <DependentUpon>OrderStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderStatus.aspx.designer.cs">
+      <DependentUpon>OrderStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Partner.aspx.cs">
+      <DependentUpon>Partner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Partner.aspx.designer.cs">
+      <DependentUpon>Partner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Privacy.aspx.cs">
+      <DependentUpon>Privacy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Privacy.aspx.designer.cs">
+      <DependentUpon>Privacy.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ProductDetails.aspx.cs">
       <DependentUpon>ProductDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -531,13 +623,28 @@
     <Compile Include="ProductDetails.aspx.designer.cs">
       <DependentUpon>ProductDetails.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ProductList.aspx.cs">
-      <DependentUpon>ProductList.aspx</DependentUpon>
+    <Compile Include="Products.aspx.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ProductList.aspx.designer.cs">
-      <DependentUpon>ProductList.aspx</DependentUpon>
+    <Compile Include="Products.aspx.designer.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReturnPolicy.aspx.cs">
+      <DependentUpon>ReturnPolicy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReturnPolicy.aspx.designer.cs">
+      <DependentUpon>ReturnPolicy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Returns.aspx.cs">
+      <DependentUpon>Returns.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Returns.aspx.designer.cs">
+      <DependentUpon>Returns.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ShoppingCart.aspx.cs">
       <DependentUpon>ShoppingCart.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -560,6 +667,20 @@
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="TempPage.aspx.cs">
+      <DependentUpon>TempPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TempPage.aspx.designer.cs">
+      <DependentUpon>TempPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Terms.aspx.cs">
+      <DependentUpon>Terms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Terms.aspx.designer.cs">
+      <DependentUpon>Terms.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -573,13 +694,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.1.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201702190904388_Initialize.resx">
+      <DependentUpon>201702190904388_Initialize.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

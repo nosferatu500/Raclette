@@ -79,21 +79,21 @@ namespace WebApplicationTest.Admin
 
         public IQueryable GetCategories()
         {
-            var _db = new ProductContext();
+            var _db = new ApplicationDbContext();
             IQueryable query = _db.Categories;
             return query;
         }
 
         public IQueryable GetProducts()
         {
-            var _db = new ProductContext();
+            var _db = new ApplicationDbContext();
             IQueryable query = _db.Products;
             return query;
         }
 
         protected void RemoveProductButton_Click(object sender, EventArgs e)
         {
-            using (var _db = new ProductContext())
+            using (var _db = new ApplicationDbContext())
             {
                 int productId = Convert.ToInt16(DropDownRemoveProduct.SelectedValue);
                 var myItem = (from c in _db.Products where c.ProductID == productId select c).FirstOrDefault();

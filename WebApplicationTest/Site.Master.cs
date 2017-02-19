@@ -89,7 +89,7 @@ namespace WebApplicationTest
 
         public IQueryable<Category> GetCategories()
         {
-            var _db = new ProductContext();
+            var _db = new ApplicationDbContext();
             IQueryable<Category> query = _db.Categories;
             return query;
         }

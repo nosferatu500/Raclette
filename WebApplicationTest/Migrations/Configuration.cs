@@ -1,14 +1,21 @@
-﻿using System;
 using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Web;
+using WebApplicationTest.Models;
 
-namespace WebApplicationTest.Models
+namespace WebApplicationTest.Migrations
 {
-    public class ProductDatabaseInitializer : DropCreateDatabaseIfModelChanges<ProductContext>
+    using System;
+    using System.Data.Entity;
+    using System.Data.Entity.Migrations;
+    using System.Linq;
+
+    internal sealed class Configuration : DbMigrationsConfiguration<WebApplicationTest.Models.ApplicationDbContext>
     {
-        protected override void Seed(ProductContext context)
+        public Configuration()
+        {
+            AutomaticMigrationsEnabled = false;
+        }
+
+        protected override void Seed(ApplicationDbContext context)
         {
             GetCategories().ForEach(c => context.Categories.Add(c));
             GetProducts().ForEach(p => context.Products.Add(p));

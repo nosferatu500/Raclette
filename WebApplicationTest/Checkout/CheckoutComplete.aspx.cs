@@ -43,7 +43,7 @@ namespace WebApplicationTest.Checkout
                     string PaymentConfirmation = decoder["PAYMENTINFO_0_TRANSACTIONID"].ToString();
                     TransactionId.Text = PaymentConfirmation;
 
-                    ProductContext _db = new ProductContext();
+                    var _db = new ApplicationDbContext();
                     // Get the current order id.
                     int currentOrderId = -1;
                     if (Session["currentOrderId"] != string.Empty)

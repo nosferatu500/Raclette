@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.Entity;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web;
@@ -33,6 +34,12 @@ namespace WebApplicationTest.Models
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
+
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<CartItem> ShoppingCartItems { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderDetail> OrderDetails { get; set; }
 
         public static ApplicationDbContext Create()
         {

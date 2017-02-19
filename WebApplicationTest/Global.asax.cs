@@ -20,9 +20,6 @@ namespace WebApplicationTest
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-            // Initialize the product database.
-            Database.SetInitializer(new ProductDatabaseInitializer());
-
             // Create the custom role and user.
             RoleActions roleActions = new RoleActions();
             roleActions.AddUserAndRole();
